@@ -12,8 +12,8 @@ const ProjectsPage = () => {
     <Container>
       <Paper elevation={16}>
         <NavBar></NavBar>
-        <div className="container-2">
-          <div className="div2">
+        <div className={"container-2"}>
+          <div className={"div2"}>
             <p className={"bold-text"}>Examensarbete</p>
             <p>
               Never Alone is an app for people with mental illness, or people
@@ -33,12 +33,18 @@ const ProjectsPage = () => {
             </a>
           </div>
         </div>
+        <div className={"container"}>
+          <img src={start} alt="Bild på startsida" className={"img-app"} />
+          <img src={meditation} alt="Bild på startsida" className={"img-app"} />
+          <img src={dagbok} alt="Bild på startsida" className={"img-app"} />
+        </div>
         <div className="container">
-          <img src={start} alt="Bild på startsida" className=" img-app" />
-          <img src={meditation} alt="Bild på startsida" className=" img-app" />
-          <img src={dagbok} alt="Bild på startsida" className=" img-app" />
-          <img src={dailynote} alt="Bild på startsida" className=" img-app" />
-          <img src={moodtracker} alt="Bild på startsida" className=" img-app" />
+          <img src={dailynote} alt="Bild på startsida" className={"img-app"} />
+          <img
+            src={moodtracker}
+            alt="Bild på startsida"
+            className={"img-app"}
+          />
         </div>
       </Paper>
     </Container>

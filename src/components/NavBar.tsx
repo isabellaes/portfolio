@@ -8,11 +8,14 @@ const NavBar = () => {
       <NavLink to="/" style={{ textDecoration: "none" }}>
         <p className={"Link"}>Hem</p>
       </NavLink>
-      {/*  <NavLink to="/about" style={{ textDecoration: "none" }}>
-        <Typography className={"Link"}>About</Typography>
-      </NavLink> */}
+      <NavLink to="/about" style={{ textDecoration: "none" }}>
+        <p className={"Link"}>Om mig</p>
+      </NavLink>
       <NavLink to="/projects" style={{ textDecoration: "none" }}>
         <p className={"Link"}>Projekt</p>
+      </NavLink>
+      <NavLink to="/contact" style={{ textDecoration: "none" }}>
+        <p className={"Link"}>Kontakta mig</p>
       </NavLink>
     </Box>
   );

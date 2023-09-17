@@ -6,7 +6,9 @@ const PageNotFound = () => {
     <Container>
       <Paper elevation={16}>
         <NavBar></NavBar>
-        <Typography>PAGE NOT FOUND 404</Typography>
+        <div className={"container"}>
+          <p className={"bold-text red"}>PAGE NOT FOUND 404</p>
+        </div>
       </Paper>
     </Container>
   );
