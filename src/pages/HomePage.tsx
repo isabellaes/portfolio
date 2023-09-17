@@ -3,6 +3,7 @@ import "../style/pagelayout.css";
 import NavBar from "../components/NavBar";
 import image from "../assets/porträtt.jpg";
 import background from "../assets/background2.jpg";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
@@ -25,6 +26,7 @@ const HomePage = () => {
             />
           </div>
         </div>
+        <Footer></Footer>
       </Paper>
     </Container>
   );

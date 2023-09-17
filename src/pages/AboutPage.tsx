@@ -2,6 +2,7 @@ import { Container, Paper } from "@mui/material";
 import NavBar from "../components/NavBar";
 import "../style/pagelayout.css";
 import image from "../assets/porträtt.jpg";
+import Footer from "../components/Footer";
 
 const AboutPage = () => {
   return (
@@ -51,6 +52,7 @@ const AboutPage = () => {
             </ul>
           </div>
         </div>
+        <Footer></Footer>
       </Paper>
     </Container>
   );

@@ -3,6 +3,7 @@
   flex-direction: row;
   padding: 2rem;
   margin: 2rem;
+  height: max-content 100vh;
 }
 
 .container-2 {
@@ -11,6 +12,7 @@
   padding: 2rem;
   font-family: "Montserrat", sans-serif;
   margin: 1rem;
+  height: max-content 100vh;
 }
 p {
   font-family: "Montserrat", sans-serif;
@@ -67,4 +69,29 @@ p {
   font-size: larger;
   text-align: center;
   padding: 10px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 2rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.padding-left {
+  padding-left: 10px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  padding-left: 3em;
 }

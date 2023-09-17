@@ -6,6 +6,7 @@ import meditation from "../assets/meditation.png";
 import dagbok from "../assets/dagbok.png";
 import dailynote from "../assets/Kommaihåg.png";
 import moodtracker from "../assets/moodtracker.png";
+import Footer from "../components/Footer";
 
 const ProjectsPage = () => {
   return (
@@ -46,6 +47,7 @@ const ProjectsPage = () => {
             className={"img-app"}
           />
         </div>
+        <Footer></Footer>
       </Paper>
     </Container>
   );
