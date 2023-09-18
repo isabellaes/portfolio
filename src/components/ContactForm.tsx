@@ -46,6 +46,7 @@ const ContactForm = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <form onSubmit={sendEmail} className={"form-container"}>
+        <p className={"bold-text"}>Kontaktformulär</p>
         <TextField
           required
           id="outlined-basic"

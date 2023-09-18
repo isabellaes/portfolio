@@ -38,6 +38,7 @@ p {
   border: 1px solid black;
   margin-bottom: 20px;
   opacity: 95%;
+  margin-top: 15px;
 }
 
 .div1 {
@@ -75,9 +76,9 @@ p {
 .form-container {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+
   font-family: "Montserrat", sans-serif;
-  margin: 2rem;
+
   align-items: center;
   /*   border: 5px solid rgb(103, 182, 251); */
   width: fit-content;
@@ -98,7 +99,6 @@ p {
 .contact-links {
   display: flex;
   flex-direction: row;
-  padding-left: 3em;
 }
 
 .submit-button {
@@ -124,4 +124,21 @@ p {
   display: flex;
   flex-direction: row;
   height: max-content 100vh;
+}
+.container-projects-row {
+  display: flex;
+  flex-direction: row;
+  height: max-content 100vh;
+  padding: 20px;
+}
+
+.container-projects-column {
+  display: flex;
+  flex-direction: column;
+  height: max-content 100vh;
+  padding: 10px;
+}
+
+ul li {
+  padding-left: 20px;
 }

@@ -4,7 +4,6 @@ import "../style/pagelayout.css";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
 
 const ContactPage = () => {
   return (
@@ -12,18 +11,18 @@ const ContactPage = () => {
       <Paper elevation={16}>
         <NavBar></NavBar>
 
-        <div className={"container-2"}>
-          <p className={"bold-text"}>Kontakta mig</p>
+        <div className={"container-projects"}>
+          <div className={"menu-container"}>
+            <p className={"bold-text"}>Kontakta mig</p>
 
-          <ContactForm></ContactForm>
-        </div>
-        <div className={"contact-links"}>
-          <a href="https://www.linkedin.com/in/isabella-ekdahl-sahlberg-a99828220/">
-            <LinkedInIcon></LinkedInIcon>
-          </a>
-          <a href=" https://github.com/isabellaes?tab=repositories">
-            <GitHubIcon></GitHubIcon>
-          </a>
+            <a href="https://www.linkedin.com/in/isabella-ekdahl-sahlberg-a99828220/">
+              <LinkedInIcon></LinkedInIcon> LinkedIn
+            </a>
+          </div>
+          <div className={"content-container"}>
+            <ContactForm></ContactForm>
+            <br />
+          </div>
         </div>
 
         <Footer></Footer>

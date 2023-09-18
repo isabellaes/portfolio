@@ -13,6 +13,7 @@ import { useState } from "react";
 import { project1, project2, project3 } from "../utils/data";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const ProjectsPage = () => {
   interface project {
@@ -39,13 +40,18 @@ const ProjectsPage = () => {
         <NavBar></NavBar>
         <div className={"container-projects"}>
           <div className={"menu-container"}>
-            <h1>Projekt</h1>
+            <p className={"bold-text"}>Mina projekt</p>
             <Button onClick={() => handleOnChange("Examensarbete")}>
               Examensarbete
             </Button>
             <Button onClick={() => handleOnChange("Portfolio")}>
               Portfolio
             </Button>
+            <br />
+            <br />
+            <a href=" https://github.com/isabellaes?tab=repositories">
+              <GitHubIcon></GitHubIcon> Github
+            </a>
           </div>
           <div className={"content-container"}>
             <Project
