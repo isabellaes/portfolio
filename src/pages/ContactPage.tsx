@@ -9,8 +9,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 const ContactPage = () => {
   return (
     <Container>
-      <Paper>
+      <Paper elevation={16}>
         <NavBar></NavBar>
+
         <div className={"container-2"}>
           <p className={"bold-text"}>Kontakta mig</p>
 

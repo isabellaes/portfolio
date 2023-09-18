@@ -21,7 +21,7 @@ p {
 
 .img-app {
   width: 200px;
-  padding: 10px;
+  padding-left: 10px;
 }
 .bold-text {
   font-size: 26px;
@@ -56,6 +56,7 @@ p {
   width: 30%;
   padding: 10px;
   line-height: 15px;
+  padding-top: 5em;
 }
 
 .div4 {
@@ -77,6 +78,9 @@ p {
   padding: 2rem;
   font-family: "Montserrat", sans-serif;
   margin: 2rem;
+  align-items: center;
+  /*   border: 5px solid rgb(103, 182, 251); */
+  width: fit-content;
 }
 
 .footer {
@@ -84,6 +88,7 @@ p {
   flex-direction: row;
   margin: 2rem;
   padding: 2rem;
+  border-top: 1px solid rgb(103, 182, 251);
 }
 
 .padding-left {
@@ -94,4 +99,29 @@ p {
   display: flex;
   flex-direction: row;
   padding-left: 3em;
+}
+
+.submit-button {
+  width: fit-content;
+}
+
+.menu-container {
+  flex-direction: column;
+  width: 20%;
+  background-color: aliceblue;
+  /* border: 1px solid rgb(103, 182, 251); */
+  padding: 2em;
+  margin: 2em;
+}
+
+.content-container {
+  flex-direction: column;
+  width: 80%;
+  padding: 2em;
+}
+
+.container-projects {
+  display: flex;
+  flex-direction: row;
+  height: max-content 100vh;
 }
