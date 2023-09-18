@@ -1,7 +1,6 @@
 import { Container, Paper } from "@mui/material";
 import "../style/pagelayout.css";
 import NavBar from "../components/NavBar";
-import image from "../assets/porträtt.jpg";
 import background from "../assets/background2.jpg";
 import Footer from "../components/Footer";
 

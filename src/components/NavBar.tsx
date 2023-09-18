@@ -22,20 +22,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-{
-  /*    <AppBar position="static" style={{ backgroundColor: "#cea7fa" }}>
-        <Toolbar>
-          <NavLink to="/" style={{ textDecoration: "none" }}>
-            <Typography className={"Link"}>Home</Typography>
-          </NavLink>
-          <NavLink to="/about" style={{ textDecoration: "none" }}>
-            <Typography className={"Link"}>About</Typography>
-          </NavLink>
-          <NavLink to="/projects" style={{ textDecoration: "none" }}>
-            <Typography className={"Link"}>Projects</Typography>
-          </NavLink>
-          <Outlet />
-        </Toolbar>
-      </AppBar> */
-}

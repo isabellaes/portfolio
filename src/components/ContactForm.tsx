@@ -81,30 +81,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-
-/* import emailjs from "@emailjs/browser";
-import React, { useRef } from "react";
-
-const ContactForm = () => {
-  const form = useRef("");
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // prevents the page from reloading when you hit “Send”
-
-    emailjs
-      .sendForm(
-        "service_0zqihxk",
-        "Gmail",
-        e.currentTarget,
-        "5KAAPu8vXIV-IniE2"
-      )
-      .then(
-        (result) => {
-          // show the user a success message
-          console.log("Sucess");
-        },
-        (error) => {
-          // show the user an error
-          console.log("Error");
-        }
-      );
-  }; */
