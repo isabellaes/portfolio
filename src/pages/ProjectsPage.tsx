@@ -3,7 +3,6 @@ import NavBar from "../components/NavBar";
 import "../style/pagelayout.css";
 import Footer from "../components/Footer";
 import Project from "../components/Project";
-import "../utils/data";
 import { useState } from "react";
 import { project1, project2 } from "../utils/data";
 import GitHubIcon from "@mui/icons-material/GitHub";
