@@ -40,7 +40,7 @@ const AboutPage = () => {
               programmering började ganska tidigt när jag i ungdomen höll på en
               del med css och html. Har alltid velat lära mig att bygga hemsidor
               men det tog några år innan jag sökte mig in till programmering.
-              Jag har altid tyckt om problemlösning och matematik. Jag började
+              Jag har alltid tyckt om problemlösning och matematik. Jag började
               studera till systemutvecklare hösten 2021 och läste då mestadels
               C# och .Net. Det bästa med programmeringen är att lösa problem och
               att få skapa nya saker. Jag tycker också om att lära mig nya saker
