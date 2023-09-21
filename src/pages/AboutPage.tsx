@@ -12,30 +12,41 @@ const AboutPage = () => {
         <div className={"container-projects"}>
           <div className={"menu-container"}>
             <p className={"bold-text"}>Om mig</p>
-            <p style={{ fontStyle: "italic" }}>Bra på problemlösning</p>
-
-            <p style={{ fontStyle: "italic" }}>
-              Nyfiken på att lära mig nya saker
+            <h6>Namn:</h6>
+            <p>Isabella Ekdahl Sahlberg</p>
+            <h6>Ålder:</h6>
+            <p>31</p>
+            <h6>Familj:</h6>
+            <p>Fru och två katter.</p>
+            <h6>Bor:</h6>
+            <p>Tullen, Borås</p>
+            <h6>Intressen:</h6>
+            <p>Programmering, kriminalserier, fotografering.</p>
+            <h6>3 bästa egenskaper:</h6>
+            <p>
+              Bra på problemlösning och logiskt tänkande. Empatiskt. Tycker om
+              att lära mig nya saker.
             </p>
-
-            <p style={{ fontStyle: "italic" }}>Ansvarstagande</p>
           </div>
+
           <div className={"content-container"}>
             <div className="container-projects">
               <img src={image} alt="portrait" className={"img-portrait"} />
             </div>
 
-            <p className={"bold-text"}>Isabella</p>
+            <p className={"bold-text"}>Bakgrund</p>
             <p>
-              Jag är utbildad systemutvecklare och studerar nu till
-              frontendutvecklare React. Mitt intresse för programmering började
-              ganska tidigt när jag i ungdomen höll på en del med css och html.
+              Tidigare har jag jobbat inom vård och omsorg, lokalvård samt
+              butik. Jag är utbildad systemutvecklare, tog examen våren 2023 och
+              studerar nu till frontendutvecklare React. Mitt intresse för
+              programmering började ganska tidigt när jag i ungdomen höll på en
+              del med css och html. Har alltid velat lära mig att bygga hemsidor
+              men det tog några år innan jag sökte mig in till programmering.
               Jag har altid tyckt om problemlösning och matematik. Jag började
               studera till systemutvecklare hösten 2021 och läste då mestadels
-              C# och .Net Jag fastnade direkt för programmering. Det bästa med
-              programmeringen är att lösa problem och att få skapa nya saker.
-              Jag tycker också om att lära mig nya saker och det är något jag
-              alltid får utforska inom it.
+              C# och .Net. Det bästa med programmeringen är att lösa problem och
+              att få skapa nya saker. Jag tycker också om att lära mig nya saker
+              och det är något jag alltid får utforska inom programmering.
             </p>
             <p className={"bold-text"}>Tech stack</p>
             <ul>

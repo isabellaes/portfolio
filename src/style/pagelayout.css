@@ -112,6 +112,7 @@ p {
   /* border: 1px solid rgb(103, 182, 251); */
   padding: 2em;
   margin: 2em;
+  line-height: 20px;
 }
 
 .content-container {

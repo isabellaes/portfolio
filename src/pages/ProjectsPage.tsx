@@ -22,8 +22,6 @@ const ProjectsPage = () => {
       setProject(project1);
     } else if (value === project2.title) {
       setProject(project2);
-    } else if (value === project3.title) {
-      setProject(project3);
     }
   }
 
