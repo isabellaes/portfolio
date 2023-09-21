@@ -1,7 +1,8 @@
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
-import "../style/pagelayout.css";
+import "../style/layout.css";
+import "../style/contactform.css";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";

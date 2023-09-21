@@ -1,6 +1,6 @@
 import { Button, Container, Paper } from "@mui/material";
 import NavBar from "../components/NavBar";
-import "../style/pagelayout.css";
+import "../style/layout.css";
 import Footer from "../components/Footer";
 import Project from "../components/Project";
 import { useState } from "react";
@@ -22,8 +22,8 @@ const ProjectsPage = () => {
     <Container>
       <Paper elevation={16}>
         <NavBar></NavBar>
-        <div className={"container-projects"}>
-          <div className={"menu-container"}>
+        <div className={"container"}>
+          <div className={"sidebar"}>
             <p className={"bold-text"}>Mina projekt</p>
             <Button onClick={() => handleOnChange("Examensarbete")}>
               Examensarbete
@@ -37,7 +37,7 @@ const ProjectsPage = () => {
               <GitHubIcon></GitHubIcon> Github
             </a>
           </div>
-          <div className={"content-container"}>
+          <div className={"content"}>
             <Project
               title={project.title}
               description={project.description}

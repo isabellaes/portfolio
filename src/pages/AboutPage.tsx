@@ -1,6 +1,6 @@
 import { Container, Paper } from "@mui/material";
 import NavBar from "../components/NavBar";
-import "../style/pagelayout.css";
+import "../style/layout.css";
 import image from "../assets/porträtt.jpg";
 import Footer from "../components/Footer";
 
@@ -9,8 +9,8 @@ const AboutPage = () => {
     <Container>
       <Paper elevation={16}>
         <NavBar></NavBar>
-        <div className={"container-projects"}>
-          <div className={"menu-container"}>
+        <div className={"container"}>
+          <div className={"sidebar"}>
             <p className={"bold-text"}>Om mig</p>
             <h6>Namn:</h6>
             <p>Isabella Ekdahl Sahlberg</p>
@@ -29,10 +29,8 @@ const AboutPage = () => {
             </p>
           </div>
 
-          <div className={"content-container"}>
-            <div className="container-projects">
-              <img src={image} alt="portrait" className={"img-portrait"} />
-            </div>
+          <div className={"content"}>
+            <img src={image} alt="portrait" className={"img-portrait"} />
 
             <p className={"bold-text"}>Bakgrund</p>
             <p>

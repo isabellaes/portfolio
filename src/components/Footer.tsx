@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import "../style/pagelayout.css";
+import "../style/layout.css";
 
 const Footer = () => {
   return (
