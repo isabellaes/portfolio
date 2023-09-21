@@ -13,6 +13,8 @@ const ProjectsPage = () => {
   function handleOnChange(value: string) {
     if (value === project2.title) {
       setProject(project2);
+    } else if (value === project1.title && project.title != value) {
+      setProject(project1);
     }
   }
 
