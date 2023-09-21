@@ -4,22 +4,14 @@ import "../style/pagelayout.css";
 import Footer from "../components/Footer";
 import Project from "../components/Project";
 import { useState } from "react";
-import { project1, project2 } from "../utils/data";
+import { project1, project2, project } from "../utils/data";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const ProjectsPage = () => {
-  interface project {
-    title: string;
-    description: string;
-    linktogit?: string;
-    img?: string;
-  }
   const [project, setProject] = useState<project>(project1);
 
   function handleOnChange(value: string) {
-    if (value === project1.title) {
-      setProject(project1);
-    } else if (value === project2.title) {
+    if (value === project2.title) {
       setProject(project2);
     }
   }
