@@ -1,0 +1,33 @@
+.Link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.Nav-Bar-Box {
+  height: 5em;
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+  background-color: rgb(103, 182, 251);
+}
+
+.on-hover-menu-item {
+  text-shadow: azure;
+}
+
+.div1 {
+  width: 50%;
+  line-height: 20px;
+  flex-direction: row;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
