@@ -11,3 +11,8 @@
 .submit-button {
   width: fit-content;
 }
+
+.TextField {
+  margin-bottom: 2em;
+  width: 15em;
+}

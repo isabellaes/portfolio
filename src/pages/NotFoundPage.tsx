@@ -2,6 +2,8 @@ import { Container, Paper } from "@mui/material";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import "../style/layout.css";
+import "../style/tablet.css";
+import "../style/mobile.css";
 
 const PageNotFound = () => {
   return (

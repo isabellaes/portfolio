@@ -1,6 +1,8 @@
 import { Container, Paper } from "@mui/material";
 import NavBar from "../components/NavBar";
 import "../style/layout.css";
+import "../style/mobile.css";
+import "../style/tablet.css";
 import image from "../assets/porträtt.jpg";
 import Footer from "../components/Footer";
 
@@ -12,6 +14,11 @@ const AboutPage = () => {
         <div className={"container"}>
           <div className={"sidebar"}>
             <p className={"bold-text"}>Om mig</p>
+            <img
+              src={image}
+              alt="portrait"
+              className={"img-portrait-tabletmobile"}
+            />
             <h6>Namn:</h6>
             <p>Isabella Ekdahl Sahlberg</p>
             <h6>Ålder:</h6>

@@ -1,5 +1,7 @@
 import { Box } from "@mui/material";
 import "../style/layout.css";
+import "../style/tablet.css";
+import "../style/mobile.css";
 
 const Footer = () => {
   return (

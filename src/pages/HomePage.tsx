@@ -1,5 +1,7 @@
 import { Container, Paper } from "@mui/material";
+import "../style/mobile.css";
 import "../style/layout.css";
+import "../style/tablet.css";
 import NavBar from "../components/NavBar";
 import background from "../assets/background2.jpg";
 import Footer from "../components/Footer";

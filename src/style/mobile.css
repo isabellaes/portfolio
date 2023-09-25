@@ -1,21 +1,20 @@
-/* Main layout för all pages */
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 600px) {
   .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: max-content 100vh;
     width: max-content 100vw;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 2em;
+    padding: 2em;
   }
 
   .sidebar {
     flex-direction: column;
-    width: 20%;
-    background-color: aliceblue;
-    padding: 2em;
-    margin: 2em;
+    width: 80%;
+    background-color: inherit;
+    padding: 0;
+    margin: 0;
     line-height: 20px;
     align-items: center;
     justify-content: center;
@@ -25,9 +24,9 @@
   .content {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    padding: 2em;
-    margin: 2em;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     flex-grow: 1;
   }
@@ -57,19 +56,31 @@
     font-weight: 600;
   }
 
+  .link-tabletmobile {
+    display: flex;
+    margin-top: 2em;
+  }
+
+  .link-desktop {
+    display: none;
+  }
+
   /* HomePage */
   .img-background {
-    width: 80%;
+    width: 100%;
     border: 1px solid black;
     margin-bottom: 20px;
     opacity: 95%;
-    margin-top: 15px;
   }
   /* AboutPage */
   .img-portrait {
+    display: none;
+  }
+  .img-portrait-tabletmobile {
     width: 40%;
     border: 1px solid black;
     margin-bottom: 5px;
+    float: right;
   }
   /* NotFoundPage */
   .red {
@@ -82,37 +93,6 @@
   .padding-left {
     padding-left: 10px;
   }
-
-  /* mobil-relaterade */
-
-  .link-tabletmobile {
-    display: none;
-  }
-  .img-portrait-tabletmobile {
-    display: none;
-  }
-  .link-tabletmobile {
-    display: none;
-  }
-
-  /* Styling for contactform component */
-
-  .form-container {
-    display: flex;
-    flex-direction: column;
-    font-family: "Montserrat", sans-serif;
-    align-items: center;
-    width: fit-content;
-  }
-
-  .submit-button {
-    width: fit-content;
-  }
-
-  .TextField {
-    width: 15em;
-  }
-
   /* styling for product component */
 
   .container-projects-row {
@@ -133,24 +113,14 @@
     width: 20%;
     padding-left: 10px;
   }
-
   /* Styling for navbar component */
 
   .Link {
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    color: black;
-    font-weight: 600;
-    text-align: center;
-    padding: 10px;
+    display: none;
   }
 
   .Link-p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    color: black;
-    text-align: center;
-    padding: 10px;
+    display: none;
   }
 
   .Nav-Bar-Box {
@@ -158,12 +128,53 @@
     display: flex;
     flex-direction: row;
     padding: 0.5em;
+
     background-color: rgb(103, 182, 251);
-    align-items: center;
-    justify-content: center;
+    align-self: center;
+    justify-content: left;
   }
 
   .mobile-navbar {
-    display: none;
+    display: inline-block;
+    position: relative;
+  }
+  .menu-icon {
+    margin-left: 0.5em;
+  }
+
+  .drop-down-menu {
+    display: block;
+    position: absolute;
+    flex-direction: column;
+    height: 12em;
+    width: fit-content;
+    justify-content: left;
+    background-color: rgb(103, 182, 251);
+  }
+  .Link-drop-down {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.5em;
+    margin: 0;
+    z-index: 1;
+  }
+  /* Styling for contactform component */
+
+  .form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+  }
+  .TextField {
+    width: 10em;
+  }
+
+  .submit-button {
+    width: fit-content;
   }
 }
