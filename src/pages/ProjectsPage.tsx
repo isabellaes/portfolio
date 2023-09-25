@@ -1,6 +1,8 @@
 import { Button, Container, Paper } from "@mui/material";
 import NavBar from "../components/NavBar";
+import "../style/mobile.css";
 import "../style/layout.css";
+import "../style/tablet.css";
 import Footer from "../components/Footer";
 import Project from "../components/Project";
 import { useState } from "react";
@@ -33,7 +35,10 @@ const ProjectsPage = () => {
             </Button>
             <br />
             <br />
-            <a href=" https://github.com/isabellaes?tab=repositories">
+            <a
+              className={"link-desktop"}
+              href=" https://github.com/isabellaes?tab=repositories"
+            >
               <GitHubIcon></GitHubIcon> Github
             </a>
           </div>
@@ -44,6 +49,11 @@ const ProjectsPage = () => {
               linktogit={project.linktogit}
               img={project.img}
             ></Project>
+          </div>
+          <div className="link-tabletmobile">
+            <a href=" https://github.com/isabellaes?tab=repositories">
+              <GitHubIcon></GitHubIcon>
+            </a>
           </div>
         </div>
 

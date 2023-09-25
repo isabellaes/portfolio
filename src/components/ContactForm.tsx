@@ -1,8 +1,9 @@
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
+import "../style/mobile.css";
 import "../style/layout.css";
-import "../style/contactform.css";
+import "../style/tablet.css";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -52,7 +53,8 @@ const ContactForm = () => {
           id="outlined-basic"
           label="Namn"
           variant="outlined"
-          style={{ margin: "10px", width: "15em" }}
+          style={{ marginBottom: "1em" }}
+          className={"TextField"}
           onChange={(e) => setName(e.target.value)}
         />
         <TextField
@@ -60,7 +62,8 @@ const ContactForm = () => {
           id="outlined-basic"
           label="E-post"
           variant="outlined"
-          style={{ margin: "10px", width: "15em" }}
+          style={{ marginBottom: "1em" }}
+          className={"TextField"}
           onChange={(e) => setEmail(e.target.value)}
         />
         <TextField
@@ -69,10 +72,11 @@ const ContactForm = () => {
           label="Meddelande"
           multiline
           rows={4}
-          style={{ margin: "10px", width: "15em" }}
+          style={{ marginBottom: "1em" }}
+          className={"TextField"}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <Button type="submit" variant="contained" className="submit-button">
+        <Button type="submit" variant="contained" className={"submit-button"}>
           Skicka
         </Button>
       </form>

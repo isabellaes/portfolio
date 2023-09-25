@@ -27,20 +27,6 @@
   justify-content: center;
 }
 
-.on-hover-menu-item {
-  text-shadow: azure;
-}
-
-.div1 {
-  width: 50%;
-  line-height: 20px;
-  flex-direction: row;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
+.mobile-navbar {
+  display: none;
 }

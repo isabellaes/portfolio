@@ -2,8 +2,9 @@ import { Box } from "@mui/material";
 import Exarbete from "../assets/Start.png";
 import Exarbete2 from "../assets/moodtracker.png";
 import Exarbete3 from "../assets/meditation.png";
+import "../style/mobile.css";
 import "../style/layout.css";
-import "../style/project.css";
+import "../style/tablet.css";
 
 interface props {
   title: string;
