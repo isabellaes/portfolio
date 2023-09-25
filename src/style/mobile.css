@@ -5,13 +5,13 @@
     height: max-content 100vh;
     width: max-content 100vw;
     box-sizing: border-box;
-    margin: 2em;
-    padding: 2em;
+    margin: 1em;
+    padding: 1em;
   }
 
   .sidebar {
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     background-color: inherit;
     padding: 0;
     margin: 0;
@@ -148,6 +148,7 @@
     flex-direction: column;
     height: 12em;
     width: fit-content;
+    padding: 1em;
     justify-content: left;
     background-color: rgb(103, 182, 251);
   }
