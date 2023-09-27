@@ -46,7 +46,7 @@ const Project = (props: project) => {
         >
           <ArrowBackIosIcon></ArrowBackIosIcon>
         </IconButton>
-        <img src={image} alt="image" className="img-app" />
+        <img src={image} className="img-app" />
 
         <IconButton
           onClick={handleClickForward}
