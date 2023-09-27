@@ -38,28 +38,24 @@ const Project = (props: project) => {
         </a>
       </div>
 
-      {props.img ? (
-        <div className={"container-projects-row"}>
-          <IconButton
-            onClick={handleClickBack}
-            style={{ textDecoration: "none" }}
-            disableRipple={true}
-          >
-            <ArrowBackIosIcon></ArrowBackIosIcon>
-          </IconButton>
-          <img src={image} alt="image" className="img-app" />
+      <div className={"container-projects-row"}>
+        <IconButton
+          onClick={handleClickBack}
+          style={{ textDecoration: "none" }}
+          disableRipple={true}
+        >
+          <ArrowBackIosIcon></ArrowBackIosIcon>
+        </IconButton>
+        <img src={image} alt="image" className="img-app" />
 
-          <IconButton
-            onClick={handleClickForward}
-            style={{ textDecoration: "none" }}
-            disableRipple={true}
-          >
-            <ArrowForwardIosIcon></ArrowForwardIosIcon>
-          </IconButton>
-        </div>
-      ) : (
-        <p></p>
-      )}
+        <IconButton
+          onClick={handleClickForward}
+          style={{ textDecoration: "none" }}
+          disableRipple={true}
+        >
+          <ArrowForwardIosIcon></ArrowForwardIosIcon>
+        </IconButton>
+      </div>
     </Box>
   );
 };

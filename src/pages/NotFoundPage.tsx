@@ -1,8 +1,6 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import "../style/style.css";
-import ContactForm from "../components/ContactForm";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const PageNotFound = () => {
   return (
