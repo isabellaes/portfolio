@@ -33,6 +33,7 @@ const NavBar = () => {
         <NavLink to="/contact" style={{ textDecoration: "none" }}>
           <p className={"Link"}>Kontakt</p>
         </NavLink>
+
         <div className="mobile-navbar">
           <IconButton aria-label="menu" onClick={handleOnClick}>
             <MenuIcon className="menu-icon"></MenuIcon>

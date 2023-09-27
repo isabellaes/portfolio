@@ -1,0 +1,88 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: max-content 100vh;
+  width: max-content 100vw;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main-row-100 {
+  display: flex;
+  flex-direction: row;
+}
+.main-row {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.aside-10 {
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  background: linear-gradient(rgb(47, 17, 119), rgb(114, 114, 251));
+}
+
+.main-column-80 {
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+  margin: 0;
+  width: 80%;
+  background-color: rgb(223, 230, 239);
+}
+.box-column-50 {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+  margin: 0;
+  width: 50%;
+}
+
+img {
+  float: right;
+  width: 30%;
+  border: 0.5em solid black;
+  padding: 1em;
+  margin: 1em;
+}
+
+.button {
+  width: fit-content;
+}
+
+/* HomePage */
+
+.container-home {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgb(47, 17, 119), rgb(114, 114, 251));
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.content-home {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 4em;
+  height: 100%;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.content-home h1 {
+  font-size: 4em;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 800;
+}
+.home {
+  font-size: 2em;
+  font-family: "Bebas Neue", sans-serif;
+  line-height: 0em;
+}

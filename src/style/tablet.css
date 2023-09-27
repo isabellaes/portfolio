@@ -1,4 +1,13 @@
 @media only screen and (min-width: 600px) and (max-width: 992px) {
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(47, 17, 119), rgb(114, 114, 251));
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -11,14 +20,14 @@
 
   .sidebar {
     flex-direction: column;
-    padding: 0;
-    margin: 0;
-    width: 80%;
+    width: 20%;
+    padding: 2em;
+    margin: 2em;
     line-height: 20px;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    background-color: inherit;
+    background-color: rgb(114, 114, 251);
   }
 
   .link-desktop {
@@ -28,12 +37,14 @@
   .content {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 80%;
-    padding: 0;
-    margin: 0;
+    padding: 2em;
+    margin: 2em;
     box-sizing: border-box;
     flex-grow: 1;
-    justify-content: center;
+    /*  background-color: (114, 114, 251); */
   }
 
   .footer {
@@ -136,7 +147,7 @@
   .Link {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
-    color: black;
+    color: rgb(236, 228, 228);
     font-weight: 600;
     text-align: center;
     padding: 10px;
@@ -145,21 +156,32 @@
   .Link-p {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
-    color: black;
+    color: rgb(120, 208, 239);
     text-align: center;
     padding: 10px;
   }
 
   .Nav-Bar-Box {
-    height: 3em;
+    height: 5em;
     display: flex;
+    background-color: rgb(13, 14, 14);
     flex-direction: row;
-    padding: 0.5em;
-    background-color: rgb(103, 182, 251);
+    padding-right: 2em;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
+    position: sticky;
   }
   .mobile-navbar {
     display: none;
+  }
+  .content h1 {
+    font-size: 4em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+  }
+  .home {
+    font-size: 2em;
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 0em;
   }
 }
