@@ -1,42 +1,36 @@
-import { Container, Paper } from "@mui/material";
 import NavBar from "../components/NavBar";
-import "../style/mobile.css";
-import "../style/layout.css";
-import "../style/tablet.css";
+import "../style/style.css";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const ContactPage = () => {
   return (
-    <Container>
-      <Paper elevation={16}>
-        <NavBar></NavBar>
+    <div className="main-container">
+      <NavBar></NavBar>
+      <div className="main-row-100">
+        <div className="aside-10"></div>
+        <div className="main-column-80">
+          <div className="main-row">
+            <div className="box-column-50">
+              <p className={"bold-text"}>Kontakta mig</p>
 
-        <div className={"container"}>
-          <div className={"sidebar"}>
-            <p className={"bold-text"}>Kontakta mig</p>
-
-            <a
-              className={"link-desktop"}
-              href="https://www.linkedin.com/in/isabella-ekdahl-sahlberg-a99828220/"
-            >
-              <LinkedInIcon></LinkedInIcon> LinkedIn
-            </a>
+              <a
+                className={"link-desktop"}
+                href="https://www.linkedin.com/in/isabella-ekdahl-sahlberg-a99828220/"
+              >
+                <LinkedInIcon></LinkedInIcon> LinkedIn
+              </a>
+            </div>
+            <div className="box-column-50">
+              <ContactForm></ContactForm>
+            </div>
           </div>
-          <div className={"content"}>
-            <ContactForm></ContactForm>
-          </div>
-          <div className={"link-tabletmobile"}>
-            <a href="https://www.linkedin.com/in/isabella-ekdahl-sahlberg-a99828220/">
-              <LinkedInIcon></LinkedInIcon>
-            </a>
-          </div>
+          <Footer></Footer>
         </div>
-
-        <Footer></Footer>
-      </Paper>
-    </Container>
+        <div className="aside-10"></div>
+      </div>
+    </div>
   );
 };
 

@@ -1,8 +1,6 @@
-import { Button, Container, Paper } from "@mui/material";
+import { Button } from "@mui/material";
 import NavBar from "../components/NavBar";
-import "../style/mobile.css";
-import "../style/layout.css";
-import "../style/tablet.css";
+import "../style/style.css";
 import Footer from "../components/Footer";
 import Project from "../components/Project";
 import { useState } from "react";
@@ -21,45 +19,48 @@ const ProjectsPage = () => {
   }
 
   return (
-    <Container>
-      <Paper elevation={16}>
-        <NavBar></NavBar>
-        <div className={"container"}>
-          <div className={"sidebar"}>
-            <p className={"bold-text"}>Mina projekt</p>
-            <Button onClick={() => handleOnChange("Examensarbete")}>
-              Examensarbete
-            </Button>
-            <Button onClick={() => handleOnChange("Portfolio")}>
-              Portfolio
-            </Button>
-            <br />
-            <br />
-            <a
-              className={"link-desktop"}
-              href=" https://github.com/isabellaes?tab=repositories"
-            >
-              <GitHubIcon></GitHubIcon> Github
-            </a>
-          </div>
-          <div className={"content"}>
-            <Project
-              title={project.title}
-              description={project.description}
-              linktogit={project.linktogit}
-              img={project.img}
-            ></Project>
-          </div>
-          <div className="link-tabletmobile">
-            <a href=" https://github.com/isabellaes?tab=repositories">
-              <GitHubIcon></GitHubIcon>
-            </a>
-          </div>
-        </div>
+    <div className="main-container">
+      <NavBar></NavBar>
+      <div className="main-row-100">
+        <div className="aside-10"></div>
+        <div className="main-column-80">
+          <div className="main-row">
+            <div className="box-column-50">
+              <p className={"bold-text"}>Mina projekt</p>
 
-        <Footer></Footer>
-      </Paper>
-    </Container>
+              <Button
+                className="button"
+                onClick={() => handleOnChange("Examensarbete")}
+              >
+                Examensarbete
+              </Button>
+              <Button
+                className="button"
+                onClick={() => handleOnChange("Portfolio")}
+              >
+                Portfolio
+              </Button>
+              <a
+                className={"link-desktop"}
+                href=" https://github.com/isabellaes?tab=repositories"
+              >
+                <GitHubIcon></GitHubIcon> Github
+              </a>
+            </div>
+            <div className="box-column-50">
+              <Project
+                title={project.title}
+                description={project.description}
+                linktogit={project.linktogit}
+                img={project.img}
+              ></Project>
+            </div>
+          </div>
+          <Footer></Footer>
+        </div>
+        <div className="aside-10"></div>
+      </div>
+    </div>
   );
 };
 
