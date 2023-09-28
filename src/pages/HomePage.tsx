@@ -1,6 +1,8 @@
 import "../style/style.css";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import "../style/mobile.css";
+import "../style/tablet.css";
 
 const HomePage = () => {
   return (

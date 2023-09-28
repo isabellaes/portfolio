@@ -1,5 +1,7 @@
 import NavBar from "../components/NavBar";
 import "../style/style.css";
+import "../style/mobile.css";
+import "../style/tablet.css";
 
 import image from "../assets/porträtt.jpg";
 import Footer from "../components/Footer";

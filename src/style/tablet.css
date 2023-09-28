@@ -1,52 +1,4 @@
 @media only screen and (min-width: 600px) and (max-width: 992px) {
-  .container2 {
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(rgb(47, 17, 119), rgb(114, 114, 251));
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    height: max-content 100vh;
-    width: max-content 100vw;
-    box-sizing: border-box;
-    margin: 2em;
-    padding: 2em;
-  }
-
-  .sidebar {
-    flex-direction: column;
-    width: 20%;
-    padding: 2em;
-    margin: 2em;
-    line-height: 20px;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    background-color: rgb(114, 114, 251);
-  }
-
-  .link-desktop {
-    display: none;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    padding: 2em;
-    margin: 2em;
-    box-sizing: border-box;
-    flex-grow: 1;
-    /*  background-color: (114, 114, 251); */
-  }
-
   .footer {
     display: flex;
     flex-direction: row;
@@ -68,8 +20,9 @@
     margin: 0;
   }
   .bold-text {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 2em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
   }
 
   .link-tabletmobile {
@@ -77,17 +30,8 @@
     margin-top: 2em;
   }
 
-  /* HomePage */
-  .img-background {
-    width: 100%;
-    border: 1px solid black;
-    margin-bottom: 20px;
-    opacity: 95%;
-  }
   /* AboutPage */
-  .img-portrait {
-    display: none;
-  }
+
   .img-portrait-tabletmobile {
     width: 40%;
     border: 1px solid black;
@@ -101,10 +45,7 @@
     text-align: center;
     padding: 10px;
   }
-  /* Footer */
-  .padding-left {
-    padding-left: 10px;
-  }
+
   /* Styling for contactform component */
 
   .form-container {
@@ -112,7 +53,7 @@
     flex-direction: column;
     font-family: "Montserrat", sans-serif;
     align-items: center;
-    width: fit-content;
+    width: 100%;
   }
 
   .submit-button {
@@ -138,10 +79,6 @@
     padding: 10px;
   }
 
-  .img-app {
-    width: 20%;
-    padding-left: 10px;
-  }
   /* Styling for navbar component */
 
   .Link {
@@ -183,5 +120,97 @@
     font-size: 2em;
     font-family: "Bebas Neue", sans-serif;
     line-height: 0em;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    height: max-content 100vh;
+    width: max-content 100vw;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .main-row-100 {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-row {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .aside-10 {
+    padding: 0;
+    margin: 0;
+    width: 10%;
+    background: linear-gradient(rgb(47, 17, 119), rgb(114, 114, 251));
+  }
+
+  .main-column-80 {
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    margin: 0;
+    width: 80%;
+    background-color: rgb(223, 230, 239);
+  }
+  .box-column-50 {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    margin: 0;
+    width: 80%;
+  }
+
+  img {
+    float: right;
+    width: 30%;
+    border: 0.5em solid black;
+    padding: 1em;
+    margin: 1em;
+  }
+
+  .button {
+    width: fit-content;
+  }
+
+  /* HomePage */
+
+  .container-home {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(47, 17, 119), rgb(114, 114, 251));
+    min-width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  .content-home {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 4em;
+    height: 100%;
+    box-sizing: border-box;
+    flex-grow: 1;
+  }
+
+  .content-home h1 {
+    font-size: 4em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+  }
+  .home {
+    font-size: 2em;
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 0em;
+  }
+
+  .mobile-navbar {
+    display: none;
   }
 }

@@ -8,7 +8,7 @@ export interface project {
   title: string;
   description: string;
   linktogit?: string;
-  img: string[];
+  img?: string[];
 }
 
 export const project1: project = {
@@ -24,7 +24,6 @@ export const project2: project = {
   description:
     "Denna hemsidan är byggd med React, Typescript, Css, Html. Sidan är publicerad via Netlify.",
   linktogit: "https://github.com/isabellaes/portfolio",
-  img: [],
 };
 
 export const project3: project = {
