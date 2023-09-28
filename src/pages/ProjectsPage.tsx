@@ -4,7 +4,7 @@ import "../style/style.css";
 import Footer from "../components/Footer";
 import Project from "../components/Project";
 import { useState } from "react";
-import { project1, project2, project } from "../utils/data";
+import { project1, project2, project3, project } from "../utils/data";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "../style/mobile.css";
 import "../style/tablet.css";
@@ -16,6 +16,8 @@ const ProjectsPage = () => {
       setProject(project2);
     } else if (value === project1.title && project.title !== value) {
       setProject(project1);
+    } else if (value === project3.title && project.title !== value) {
+      setProject(project3);
     }
   }
 
@@ -40,6 +42,12 @@ const ProjectsPage = () => {
                 onClick={() => handleOnChange("Portfolio")}
               >
                 Portfolio
+              </Button>
+              <Button
+                className="button"
+                onClick={() => handleOnChange("Express-API")}
+              >
+                Express-API
               </Button>
               <a
                 className={"link-desktop"}

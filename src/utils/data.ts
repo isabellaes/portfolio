@@ -27,10 +27,10 @@ export const project2: project = {
 };
 
 export const project3: project = {
-  title: "Webbshop",
-  description: "React, Typescript, .Net C#",
-  linktogit: "",
-  img: [Exarbete, Exarbete2, Exarbete3],
+  title: "Express-API",
+  description:
+    "Simpelt Express-API med Typescript. Se koden på githubrepot via länken nedan:",
+  linktogit: "https://github.com/isabellaes/Express-API/tree/main",
 };
 
 export const project4: project = {
