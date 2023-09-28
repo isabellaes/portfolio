@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
 import "../style/mobile.css";
-import "../style/layout.css";
+import "../style/style.css";
 import "../style/tablet.css";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";

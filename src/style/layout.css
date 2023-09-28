@@ -1,4 +1,4 @@
-/* Main layout för all pages */
+/* /* Main layout för all pages 
 @media only screen and (min-width: 992px) {
   .container2 {
     display: flex;
@@ -16,7 +16,6 @@
     box-sizing: border-box;
     background-color: rgb(114, 114, 251);
 
-    /*  background: rgb(114, 114, 251); */
   }
 
   .row {
@@ -60,7 +59,7 @@
     flex-grow: 1;
     background-color: white;
 
-    /*  background-color: (114, 114, 251); */
+   
   }
   .content3 {
     display: flex;
@@ -72,7 +71,7 @@
     background-color: white;
     margin: 0;
 
-    /*  background-color: (114, 114, 251); */
+  
   }
 
   .content2 {
@@ -83,7 +82,7 @@
     box-sizing: border-box;
     flex-grow: 1;
 
-    /*  background-color: (114, 114, 251); */
+  
   }
 
   .footer {
@@ -113,7 +112,7 @@
     font-weight: 400;
   }
 
-  /* HomePage */
+
   .img-background {
     width: 80%;
     margin-bottom: 20px;
@@ -121,26 +120,26 @@
     margin-top: 15px;
     box-shadow: 2px 2px 2px 2px rgb(183, 183, 183);
   }
-  /* AboutPage */
+  
   .img-portrait {
     width: 30%;
     border: 1px solid black;
     margin-bottom: 5px;
     float: right;
   }
-  /* NotFoundPage */
+ 
   .red {
     color: crimson;
     font-size: larger;
     text-align: center;
     padding: 10px;
   }
-  /* Footer */
+ 
   .padding-left {
     padding-left: 10px;
   }
 
-  /* mobil-relaterade */
+
 
   .link-tabletmobile {
     display: none;
@@ -155,7 +154,7 @@
     display: none;
   }
 
-  /* Styling for contactform component */
+  
 
   .form-container {
     display: flex;
@@ -173,13 +172,13 @@
     width: 15em;
   }
 
-  /* styling for product component */
+
 
   .container-projects-row {
     display: flex;
     flex-direction: row;
     height: max-content 100vh;
-    /* padding: 20px; */
+  
   }
 
   .container-projects-column {
@@ -188,13 +187,20 @@
     height: max-content 100vh;
     padding: 10px;
   }
-
-  .img-app {
-    width: 35%;
-    padding-left: 10px;
+  img {
+    float: right;
+    width: 30%;
+    border: 0.5em solid black;
+    padding: 1em;
+    margin: 1em;
   }
 
-  /* Styling for navbar component */
+    .img-app {
+    width: 35%;
+    padding-left: 10px;
+  } 
+
+  Styling for navbar component 
 
   .Link {
     font-family: "Montserrat", sans-serif;
@@ -227,7 +233,7 @@
     display: none;
   }
 
-  /* TestLayout */
+  TestLayout 
 
   .content2 h1 {
     font-size: 4em;
@@ -250,5 +256,6 @@
     box-sizing: border-box;
   }
 
-  /* New layout css */
+  
 }
+ */

@@ -1,36 +1,4 @@
 @media only screen and (max-width: 600px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    height: max-content 100vh;
-    width: max-content 100vw;
-    box-sizing: border-box;
-    margin: 1em;
-    padding: 1em;
-  }
-
-  .sidebar {
-    flex-direction: column;
-    width: 100%;
-    background-color: inherit;
-    padding: 0;
-    margin: 0;
-    line-height: 20px;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    flex-grow: 1;
-  }
-
   .footer {
     display: flex;
     flex-direction: row;
@@ -39,6 +7,56 @@
     border-top: 1px solid rgb(103, 182, 251);
   }
 
+  .link-tabletmobile {
+    display: flex;
+    margin-top: 2em;
+  }
+  .aside-10 {
+    padding: 0;
+    margin: 0;
+    width: 5%;
+    background: linear-gradient(rgb(47, 17, 119), rgb(114, 114, 251));
+  }
+
+  .main-column-80 {
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    margin: 0;
+    width: 90%;
+    background-color: rgb(223, 230, 239);
+  }
+  .box-column-50 {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    margin: 0;
+    width: 90%;
+  }
+  .main-row-100 {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-row {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  img {
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    padding: 1em;
+    margin: 1em;
+  }
+
+  .button {
+    width: fit-content;
+  }
   p {
     font-family: "Montserrat", sans-serif;
     color: black;
@@ -52,46 +70,20 @@
     margin: 0;
   }
   .bold-text {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 2em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
   }
 
-  .link-tabletmobile {
-    display: flex;
-    margin-top: 2em;
-  }
-
-  .link-desktop {
-    display: none;
-  }
-
-  /* HomePage */
-  .img-background {
-    width: 100%;
-    border: 1px solid black;
-    margin-bottom: 20px;
-  }
   /* AboutPage */
-  .img-portrait {
-    display: none;
-  }
+
   .img-portrait-tabletmobile {
     width: 40%;
     border: 1px solid black;
     margin-bottom: 5px;
     float: right;
   }
-  /* NotFoundPage */
-  .red {
-    color: crimson;
-    font-size: larger;
-    text-align: center;
-    padding: 10px;
-  }
-  /* Footer */
-  .padding-left {
-    padding-left: 10px;
-  }
+
   /* styling for product component */
 
   .container-projects-row {
@@ -108,10 +100,6 @@
     padding: 10px;
   }
 
-  .img-app {
-    width: 20%;
-    padding-left: 10px;
-  }
   /* Styling for navbar component */
 
   .Link {
@@ -127,7 +115,7 @@
     display: flex;
     flex-direction: row;
     padding: 0.5em;
-    background-color: rgb(103, 182, 251);
+    background-color: rgb(42, 43, 43);
     align-self: center;
     justify-content: left;
   }
@@ -138,6 +126,7 @@
   }
   .menu-icon {
     margin-left: 0.5em;
+    color: rgb(236, 228, 228);
   }
 
   .drop-down-menu {
@@ -147,21 +136,51 @@
     height: 12em;
     width: fit-content;
     padding: 1em;
-    justify-content: left;
-    background-color: rgb(103, 182, 251);
+    background-color: rgb(26, 26, 27);
   }
   .Link-drop-down {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
-    color: black;
+    color: rgb(236, 228, 228);
     font-weight: 600;
     text-align: left;
     padding: 0.5em;
     margin: 0;
     z-index: 1;
   }
-  /* Styling for contactform component */
 
+  /* HomePage */
+
+  .container-home {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(47, 17, 119), rgb(114, 114, 251));
+    min-width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  .content-home {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 4em;
+    height: 100%;
+    box-sizing: border-box;
+    flex-grow: 1;
+  }
+  .content-home h1 {
+    font-size: 3em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+  }
+  .home {
+    font-size: 2em;
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 1em;
+    padding: 0.5em;
+    margin: 0;
+  }
+  /* style for contactcomponent */
   .form-container {
     width: 100%;
     display: flex;

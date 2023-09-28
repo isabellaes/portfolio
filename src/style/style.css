@@ -1,88 +1,179 @@
-.main-container {
-  display: flex;
-  flex-direction: column;
-  height: max-content 100vh;
-  width: max-content 100vw;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-.main-row-100 {
-  display: flex;
-  flex-direction: row;
-}
-.main-row {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@media only screen and (min-width: 992px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    height: max-content 100vh;
+    width: max-content 100vw;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .main-row-100 {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-row {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
-.aside-10 {
-  padding: 0;
-  margin: 0;
-  width: 10%;
-  background: linear-gradient(rgb(47, 17, 119), rgb(114, 114, 251));
-}
+  .aside-10 {
+    padding: 0;
+    margin: 0;
+    width: 10%;
+    background: linear-gradient(rgb(47, 17, 119), rgb(114, 114, 251));
+  }
 
-.main-column-80 {
-  display: flex;
-  flex-direction: column;
-  padding: 3em;
-  margin: 0;
-  width: 80%;
-  background-color: rgb(223, 230, 239);
-}
-.box-column-50 {
-  display: flex;
-  flex-direction: column;
+  .main-column-80 {
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    margin: 0;
+    width: 80%;
+    background-color: rgb(223, 230, 239);
+  }
+  .box-column-50 {
+    display: flex;
+    flex-direction: column;
 
-  padding: 0;
-  margin: 0;
-  width: 50%;
-}
+    padding: 0;
+    margin: 0;
+    width: 50%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    padding: 2rem;
+    border-top: 1px solid rgb(103, 182, 251);
+  }
 
-img {
-  float: right;
-  width: 30%;
-  border: 0.5em solid black;
-  padding: 1em;
-  margin: 1em;
-}
+  p {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 15px;
+  }
 
-.button {
-  width: fit-content;
-}
+  h6 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+  }
+  .bold-text {
+    font-size: 2em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+  }
 
-/* HomePage */
+  img {
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+    padding: 1em;
+    margin: 1em;
+  }
+  /* Style for projectcomponent */
+  .container-projects-row {
+    display: flex;
+    flex-direction: row;
+    height: max-content 100vh;
+    /* padding: 20px; */
+  }
 
-.container-home {
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(rgb(47, 17, 119), rgb(114, 114, 251));
-  width: 100vw;
-  height: 100vh;
-  box-sizing: border-box;
-}
-.content-home {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  padding: 4em;
-  height: 100%;
-  box-sizing: border-box;
-  flex-grow: 1;
-}
+  .container-projects-column {
+    display: flex;
+    flex-direction: column;
+    height: max-content 100vh;
+    padding: 10px;
+  }
 
-.content-home h1 {
-  font-size: 4em;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 800;
-}
-.home {
-  font-size: 2em;
-  font-family: "Bebas Neue", sans-serif;
-  line-height: 0em;
+  .button {
+    width: fit-content;
+  }
+
+  /* HomePage */
+
+  .container-home {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(47, 17, 119), rgb(114, 114, 251));
+    min-width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  .content-home {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 4em;
+    height: 100%;
+    box-sizing: border-box;
+    flex-grow: 1;
+  }
+
+  .content-home h1 {
+    font-size: 4em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+  }
+  .home {
+    font-size: 2em;
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 0em;
+  }
+
+  /* Style for contactcomponent */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    width: fit-content;
+  }
+
+  .submit-button {
+    width: fit-content;
+  }
+
+  .TextField {
+    width: 15em;
+  }
+
+  /* Styling for navbar component */
+
+  .Link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: rgb(236, 228, 228);
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .Link-p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: rgb(120, 208, 239);
+    text-align: center;
+    padding: 10px;
+  }
+
+  .Nav-Bar-Box {
+    height: 5em;
+    display: flex;
+    background-color: rgb(13, 14, 14);
+    flex-direction: row;
+    padding-right: 2em;
+    align-items: center;
+    justify-content: right;
+  }
+
+  .mobile-navbar {
+    display: none;
+  }
 }

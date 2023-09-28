@@ -6,7 +6,8 @@ import Project from "../components/Project";
 import { useState } from "react";
 import { project1, project2, project } from "../utils/data";
 import GitHubIcon from "@mui/icons-material/GitHub";
-
+import "../style/mobile.css";
+import "../style/tablet.css";
 const ProjectsPage = () => {
   const [project, setProject] = useState<project>(project1);
 
@@ -44,7 +45,9 @@ const ProjectsPage = () => {
                 className={"link-desktop"}
                 href=" https://github.com/isabellaes?tab=repositories"
               >
-                <GitHubIcon></GitHubIcon> Github
+                <GitHubIcon
+                  style={{ fontSize: "3em", marginTop: "1em" }}
+                ></GitHubIcon>
               </a>
             </div>
             <div className="box-column-50">

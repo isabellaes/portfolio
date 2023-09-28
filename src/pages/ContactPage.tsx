@@ -3,6 +3,8 @@ import "../style/style.css";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import "../style/mobile.css";
+import "../style/tablet.css";
 
 const ContactPage = () => {
   return (
@@ -19,7 +21,7 @@ const ContactPage = () => {
                 className={"link-desktop"}
                 href="https://www.linkedin.com/in/isabella-ekdahl-sahlberg-a99828220/"
               >
-                <LinkedInIcon></LinkedInIcon> LinkedIn
+                <LinkedInIcon style={{ fontSize: "3em" }}></LinkedInIcon>
               </a>
             </div>
             <div className="box-column-50">

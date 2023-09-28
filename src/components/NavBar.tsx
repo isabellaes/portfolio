@@ -1,7 +1,7 @@
 import { Box, IconButton } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import "../style/mobile.css";
-import "../style/layout.css";
+import "../style/style.css";
 import "../style/tablet.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
