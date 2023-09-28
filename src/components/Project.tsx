@@ -12,12 +12,14 @@ const Project = (props: project) => {
   const [image, setImage] = useState<string>();
 
   useEffect(() => {
-    if (props.img) setImage(props.img[0]);
-  }, [setImage]);
+    if (props.img) {
+      setImage(props.img[0]);
+    }
+  }, [setImage, props.img]);
   function handleClickForward() {
-    if (props.img && image != undefined) {
+    if (props.img && image !== undefined) {
       const index = props.img.indexOf(image) + 1;
-      if (props.img[index] != null) {
+      if (props.img[index] !== null) {
         setImage(props.img[index]);
       } else {
         setImage(props.img[0]);
@@ -25,9 +27,9 @@ const Project = (props: project) => {
     }
   }
   function handleClickBack() {
-    if (props.img && image != undefined) {
+    if (props.img && image !== undefined) {
       const index = props.img.indexOf(image) - 1;
-      if (props.img[index] != null) {
+      if (props.img[index] !== null) {
         setImage(props.img[index]);
       } else {
         const lastIndex = props.img.length - 1;
