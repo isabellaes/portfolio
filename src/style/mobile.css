@@ -11,13 +11,70 @@
     display: flex;
     margin-top: 2em;
   }
-
-  /* HomePage */
-  .img-background {
-    width: 100%;
-    border: 1px solid black;
-    margin-bottom: 20px;
+  .aside-10 {
+    padding: 0;
+    margin: 0;
+    width: 5%;
+    background: linear-gradient(rgb(47, 17, 119), rgb(114, 114, 251));
   }
+
+  .main-column-80 {
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    margin: 0;
+    width: 90%;
+    background-color: rgb(223, 230, 239);
+  }
+  .box-column-50 {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    margin: 0;
+    width: 90%;
+  }
+  .main-row-100 {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-row {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  img {
+    float: right;
+    width: 30%;
+    border: 0.5em solid black;
+    padding: 1em;
+    margin: 1em;
+  }
+
+  .button {
+    width: fit-content;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 15px;
+  }
+
+  h6 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+  }
+  .bold-text {
+    font-size: 2em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+  }
+
   /* AboutPage */
 
   .img-portrait-tabletmobile {
@@ -43,10 +100,6 @@
     padding: 10px;
   }
 
-  .img-app {
-    width: 20%;
-    padding-left: 10px;
-  }
   /* Styling for navbar component */
 
   .Link {
@@ -127,69 +180,7 @@
     padding: 0.5em;
     margin: 0;
   }
-  .aside-10 {
-    padding: 0;
-    margin: 0;
-    width: 5%;
-    background: linear-gradient(rgb(47, 17, 119), rgb(114, 114, 251));
-  }
-
-  .main-column-80 {
-    display: flex;
-    flex-direction: column;
-    padding: 3em;
-    margin: 0;
-    width: 90%;
-    background-color: rgb(223, 230, 239);
-  }
-  .box-column-50 {
-    display: flex;
-    flex-direction: column;
-
-    padding: 0;
-    margin: 0;
-    width: 90%;
-  }
-  .main-row-100 {
-    display: flex;
-    flex-direction: column;
-  }
-  .main-row {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  img {
-    float: right;
-    width: 30%;
-    border: 0.5em solid black;
-    padding: 1em;
-    margin: 1em;
-  }
-
-  .button {
-    width: fit-content;
-  }
-  p {
-    font-family: "Montserrat", sans-serif;
-    color: black;
-    font-size: 15px;
-  }
-
-  h6 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    padding: 0;
-    margin: 0;
-  }
-  .bold-text {
-    font-size: 2em;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-  }
+  /* style for contactcomponent */
   .form-container {
     width: 100%;
     display: flex;

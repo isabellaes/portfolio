@@ -1,126 +1,4 @@
 @media only screen and (min-width: 600px) and (max-width: 992px) {
-  .footer {
-    display: flex;
-    flex-direction: row;
-    margin: 2rem;
-    padding: 2rem;
-    border-top: 1px solid rgb(103, 182, 251);
-  }
-
-  p {
-    font-family: "Montserrat", sans-serif;
-    color: black;
-    font-size: 15px;
-  }
-
-  h6 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    padding: 0;
-    margin: 0;
-  }
-  .bold-text {
-    font-size: 2em;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-  }
-
-  .link-tabletmobile {
-    display: flex;
-    margin-top: 2em;
-  }
-
-  /* AboutPage */
-
-  .img-portrait-tabletmobile {
-    width: 40%;
-    border: 1px solid black;
-    margin-bottom: 5px;
-    float: right;
-  }
-  /* NotFoundPage */
-  .red {
-    color: crimson;
-    font-size: larger;
-    text-align: center;
-    padding: 10px;
-  }
-
-  /* Styling for contactform component */
-
-  .form-container {
-    display: flex;
-    flex-direction: column;
-    font-family: "Montserrat", sans-serif;
-    align-items: center;
-    width: 100%;
-  }
-
-  .submit-button {
-    width: fit-content;
-  }
-  .TextField {
-    margin: 1em;
-    width: 15em;
-  }
-  /* styling for product component */
-
-  .container-projects-row {
-    display: flex;
-    flex-direction: row;
-    height: max-content 100vh;
-    padding: 20px;
-  }
-
-  .container-projects-column {
-    display: flex;
-    flex-direction: column;
-    height: max-content 100vh;
-    padding: 10px;
-  }
-
-  /* Styling for navbar component */
-
-  .Link {
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    color: rgb(236, 228, 228);
-    font-weight: 600;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .Link-p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    color: rgb(120, 208, 239);
-    text-align: center;
-    padding: 10px;
-  }
-
-  .Nav-Bar-Box {
-    height: 5em;
-    display: flex;
-    background-color: rgb(13, 14, 14);
-    flex-direction: row;
-    padding-right: 2em;
-    align-items: center;
-    justify-content: right;
-    position: sticky;
-  }
-  .mobile-navbar {
-    display: none;
-  }
-  .content h1 {
-    font-size: 4em;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 800;
-  }
-  .home {
-    font-size: 2em;
-    font-family: "Bebas Neue", sans-serif;
-    line-height: 0em;
-  }
   .main-container {
     display: flex;
     flex-direction: column;
@@ -177,6 +55,112 @@
 
   .button {
     width: fit-content;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    padding: 2rem;
+    border-top: 1px solid rgb(103, 182, 251);
+  }
+
+  p {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 15px;
+  }
+
+  h6 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+  }
+  .bold-text {
+    font-size: 2em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+  }
+
+  .link-tabletmobile {
+    display: flex;
+    margin-top: 2em;
+  }
+
+  /* AboutPage */
+
+  .img-portrait-tabletmobile {
+    width: 40%;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    float: right;
+  }
+
+  /* Styling for contactform component */
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    width: 100%;
+  }
+
+  .submit-button {
+    width: fit-content;
+  }
+  .TextField {
+    margin: 1em;
+    width: 15em;
+  }
+  /* styling for project component */
+
+  .container-projects-row {
+    display: flex;
+    flex-direction: row;
+    height: max-content 100vh;
+    padding: 20px;
+  }
+
+  .container-projects-column {
+    display: flex;
+    flex-direction: column;
+    height: max-content 100vh;
+    padding: 10px;
+  }
+
+  /* Styling for navbar component */
+
+  .Link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: rgb(236, 228, 228);
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .Link-p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: rgb(120, 208, 239);
+    text-align: center;
+    padding: 10px;
+  }
+
+  .Nav-Bar-Box {
+    height: 5em;
+    display: flex;
+    background-color: rgb(13, 14, 14);
+    flex-direction: row;
+    padding-right: 2em;
+    align-items: center;
+    justify-content: right;
+    position: sticky;
+  }
+  .mobile-navbar {
+    display: none;
   }
 
   /* HomePage */
