@@ -22,15 +22,16 @@ const ContactPage = () => {
                 className={"link-desktop"}
                 href="https://www.linkedin.com/in/isabella-ekdahl-sahlberg-a99828220/"
               >
-                <LinkedInIcon style={{ fontSize: "3em" }}></LinkedInIcon>
+                <LinkedInIcon></LinkedInIcon>
               </a>
               <a
                 className={"link-desktop"}
                 href=" https://github.com/isabellaes?tab=repositories"
               >
-                <GitHubIcon style={{ fontSize: "3em" }}></GitHubIcon>
+                <GitHubIcon></GitHubIcon>
               </a>
             </div>
+
             <div className="box-column-70">
               <ContactForm></ContactForm>
             </div>
