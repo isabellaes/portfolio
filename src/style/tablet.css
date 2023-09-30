@@ -215,14 +215,36 @@
     padding-right: 2em;
     align-items: center;
     justify-content: right;
-    position: sticky;
     box-sizing: border-box;
-    width: 100%;
+    width: 50%;
+    margin: 0;
   }
+  .Nav-Bar-Box-right {
+    height: 5em;
+    display: flex;
+    background-color: rgb(13, 14, 14);
+    flex-direction: row;
+    padding-left: 2em;
+    align-items: center;
+    justify-content: left;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0;
+  }
+
   .mobile-navbar {
     display: none;
   }
-
+  .Nav-Bar-Box-right img {
+    width: 40px;
+    display: flex;
+    justify-content: left;
+  }
+  .main-row-100-black {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(13, 14, 14);
+  }
   /* HomePage */
 
   .container-home {

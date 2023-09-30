@@ -5,7 +5,7 @@ import "../style/style.css";
 import "../style/tablet.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
-
+import IconNavbar from "../assets/apple-touch-icon.png";
 const NavBar = () => {
   const [menu, showMenu] = useState<boolean>(false);
   function handleOnClick() {
@@ -17,27 +17,32 @@ const NavBar = () => {
   }
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <div className="Nav-Bar-Box">
-        <NavLink to="/" style={{ textDecoration: "none" }}>
-          <p className={"Link"}>Hem</p>
-        </NavLink>
-        <p className="Link-p">|</p>
-        <NavLink to="/about" style={{ textDecoration: "none" }}>
-          <p className={"Link"}>Om</p>
-        </NavLink>
-        <p className="Link-p">|</p>
-        <NavLink to="/projects" style={{ textDecoration: "none" }}>
-          <p className={"Link"}>Projekt</p>
-        </NavLink>
-        <p className="Link-p">|</p>
-        <NavLink to="/contact" style={{ textDecoration: "none" }}>
-          <p className={"Link"}>Kontakt</p>
-        </NavLink>
+      <div className="main-row-100-black">
+        <div className="Nav-Bar-Box-right">
+          <img src={IconNavbar} alt="icon" />
+        </div>
+        <div className="Nav-Bar-Box">
+          <NavLink to="/" style={{ textDecoration: "none" }}>
+            <p className={"Link"}>Hem</p>
+          </NavLink>
+          <p className="Link-p">|</p>
+          <NavLink to="/about" style={{ textDecoration: "none" }}>
+            <p className={"Link"}>Om</p>
+          </NavLink>
+          <p className="Link-p">|</p>
+          <NavLink to="/projects" style={{ textDecoration: "none" }}>
+            <p className={"Link"}>Projekt</p>
+          </NavLink>
+          <p className="Link-p">|</p>
+          <NavLink to="/contact" style={{ textDecoration: "none" }}>
+            <p className={"Link"}>Kontakt</p>
+          </NavLink>
 
-        <div className="mobile-navbar">
-          <IconButton aria-label="menu" onClick={handleOnClick}>
-            <MenuIcon className="menu-icon"></MenuIcon>
-          </IconButton>
+          <div className="mobile-navbar">
+            <IconButton aria-label="menu" onClick={handleOnClick}>
+              <MenuIcon className="menu-icon"></MenuIcon>
+            </IconButton>
+          </div>
         </div>
       </div>
       {menu ? (
