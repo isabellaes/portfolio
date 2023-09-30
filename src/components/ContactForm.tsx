@@ -1,6 +1,5 @@
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
-import { Button } from "@mui/material";
 import "../style/mobile.css";
 import "../style/style.css";
 import "../style/tablet.css";
@@ -46,13 +45,13 @@ const ContactForm = () => {
   };
   return (
     <Box sx={{ flexGrow: 1 }}>
+      <p className={"bold-text"}>Kontaktformulär</p>
       <form onSubmit={sendEmail} className={"form-container"}>
-        <p className={"bold-text"}>Kontaktformulär</p>
         <TextField
           required
           id="outlined-basic"
           label="Namn"
-          variant="outlined"
+          variant="filled"
           style={{ marginBottom: "1em" }}
           className={"TextField"}
           onChange={(e) => setName(e.target.value)}
@@ -60,8 +59,8 @@ const ContactForm = () => {
         <TextField
           required
           id="outlined-basic"
+          variant="filled"
           label="E-post"
-          variant="outlined"
           style={{ marginBottom: "1em" }}
           className={"TextField"}
           onChange={(e) => setEmail(e.target.value)}
@@ -69,6 +68,7 @@ const ContactForm = () => {
         <TextField
           required
           id="outlined-multiline-static"
+          variant="filled"
           label="Meddelande"
           multiline
           rows={4}
@@ -76,9 +76,7 @@ const ContactForm = () => {
           className={"TextField"}
           onChange={(e) => setMessage(e.target.value)}
         />
-        <Button type="submit" variant="contained" className={"submit-button"}>
-          Skicka
-        </Button>
+        <button className="contact-button-2">Skicka</button>
       </form>
     </Box>
   );

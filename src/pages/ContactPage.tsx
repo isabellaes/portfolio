@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "../style/mobile.css";
 import "../style/tablet.css";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const ContactPage = () => {
   return (
@@ -14,7 +15,7 @@ const ContactPage = () => {
         <div className="aside-10"></div>
         <div className="main-column-80">
           <div className="main-row">
-            <div className="box-column-50">
+            <div className="box-column-30">
               <p className={"bold-text"}>Kontakta mig</p>
 
               <a
@@ -23,8 +24,14 @@ const ContactPage = () => {
               >
                 <LinkedInIcon style={{ fontSize: "3em" }}></LinkedInIcon>
               </a>
+              <a
+                className={"link-desktop"}
+                href=" https://github.com/isabellaes?tab=repositories"
+              >
+                <GitHubIcon style={{ fontSize: "3em" }}></GitHubIcon>
+              </a>
             </div>
-            <div className="box-column-50">
+            <div className="box-column-70">
               <ContactForm></ContactForm>
             </div>
           </div>

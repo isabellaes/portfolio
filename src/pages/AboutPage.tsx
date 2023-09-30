@@ -2,8 +2,7 @@ import NavBar from "../components/NavBar";
 import "../style/style.css";
 import "../style/mobile.css";
 import "../style/tablet.css";
-
-import image from "../assets/porträtt.jpg";
+import image from "../assets/profilbild.jpg";
 import Footer from "../components/Footer";
 
 const AboutPage = () => {
@@ -20,6 +19,11 @@ const AboutPage = () => {
                 alt="portrait"
                 className={"img-portrait-tabletmobile"}
               />
+              <img
+                src={image}
+                alt="portrait"
+                className={"img-portrait-desktop"}
+              />
               <h1 className={"bold-text"}>Om mig</h1>
               <h6>Namn:</h6>
               <p>Isabella Ekdahl Sahlberg</p>
@@ -33,7 +37,7 @@ const AboutPage = () => {
               <p>Programmering, kriminalserier, fotografering.</p>
               <h6>3 bästa egenskaper:</h6>
               <p>
-                Bra på problemlösning och logiskt tänkande. Empatiskt. Tycker om
+                Bra på problemlösning och logiskt tänkande. Driven. Tycker om
                 att lära mig nya saker.
               </p>
             </div>

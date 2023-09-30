@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import "../style/mobile.css";
 import "../style/style.css";
 import "../style/tablet.css";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import IconButton from "@mui/material/IconButton";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
@@ -10,7 +10,6 @@ import { project } from "../utils/data";
 
 const Project = (props: project) => {
   const [image, setImage] = useState<string>();
-
   useEffect(() => {
     if (props.img) {
       setImage(props.img[0]);
@@ -19,7 +18,9 @@ const Project = (props: project) => {
   function handleClickForward() {
     if (props.img && image !== undefined) {
       const index = props.img.indexOf(image) + 1;
-      if (props.img[index] !== null) {
+      console.log(props.img[index]);
+      console.log(index);
+      if (props.img[index] !== undefined) {
         setImage(props.img[index]);
       } else {
         setImage(props.img[0]);
@@ -29,10 +30,12 @@ const Project = (props: project) => {
   function handleClickBack() {
     if (props.img && image !== undefined) {
       const index = props.img.indexOf(image) - 1;
-      if (props.img[index] !== null) {
+      console.log(index);
+      if (props.img[index] !== undefined) {
         setImage(props.img[index]);
       } else {
         const lastIndex = props.img.length - 1;
+        console.log(lastIndex);
         setImage(props.img[lastIndex]);
       }
     }
@@ -55,7 +58,8 @@ const Project = (props: project) => {
           >
             <ArrowBackIosIcon></ArrowBackIosIcon>
           </IconButton>
-          <img src={image} alt="project" className="img-app" />
+          <img src={image} alt="project" className={"img-tabletmobile"} />
+          <img src={image} alt="project" className={"img-desktop"} />
 
           <IconButton
             onClick={handleClickForward}

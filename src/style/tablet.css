@@ -35,6 +35,8 @@
     margin: 0;
     width: 80%;
     background-color: rgb(223, 230, 239);
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .box-column-50 {
     display: flex;
@@ -44,25 +46,46 @@
     margin: 0;
     width: 80%;
   }
-
-  img {
-    float: right;
-    width: 30%;
-    border: 1px solid black;
-    padding: 1em;
-    margin: 1em;
+  .box-column-30 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    margin: 0;
+    width: 80%;
   }
-
-  .button {
-    width: fit-content;
+  .box-column-70 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    margin: 0;
+    width: 80%;
   }
 
   .footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    height: fit-content;
+
+    padding-left: 2em;
+    padding-top: 1em;
     margin: 2rem;
-    padding: 2rem;
     border-top: 1px solid rgb(103, 182, 251);
+    box-sizing: border-box;
+  }
+  .button {
+    border: none;
+    color: black;
+    padding: 0.8em;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 12em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    background-color: rgb(223, 230, 239);
   }
 
   p {
@@ -90,11 +113,26 @@
 
   /* AboutPage */
 
-  .img-portrait-tabletmobile {
-    width: 40%;
+  .img-tabletmobile {
+    width: 80%;
     border: 1px solid black;
     margin-bottom: 5px;
     float: right;
+    margin: 1em;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .img-portrait-tabletmobile {
+    width: 50%;
+    float: right;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .img-portrait-desktop {
+    display: none;
   }
 
   /* Styling for contactform component */
@@ -104,7 +142,9 @@
     flex-direction: column;
     font-family: "Montserrat", sans-serif;
     align-items: center;
-    width: 100%;
+    width: fit-content;
+    padding: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .submit-button {
@@ -113,6 +153,24 @@
   .TextField {
     margin: 1em;
     width: 15em;
+  }
+  .contact-button-2 {
+    border: none;
+    border-radius: 1.5em;
+    color: rgb(236, 228, 228);
+    padding: 0.8em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    font-size: 1em;
+    cursor: pointer;
+    width: 6em;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(13, 14, 14);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 600;
   }
   /* styling for project component */
 
@@ -158,6 +216,8 @@
     align-items: center;
     justify-content: right;
     position: sticky;
+    box-sizing: border-box;
+    width: 100%;
   }
   .mobile-navbar {
     display: none;
@@ -169,14 +229,14 @@
     display: flex;
     flex-direction: column;
     background: linear-gradient(rgb(47, 17, 119), rgb(114, 114, 251));
-    min-width: 100vw;
+    width: 100vw;
     min-height: 100vh;
     box-sizing: border-box;
   }
   .content-home {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     padding: 4em;
     height: 100%;
     box-sizing: border-box;
@@ -186,15 +246,39 @@
   .content-home h1 {
     font-size: 4em;
     font-family: "Bebas Neue", sans-serif;
+    margin-top: 20%;
     font-weight: 800;
   }
   .home {
     font-size: 2em;
     font-family: "Bebas Neue", sans-serif;
-    line-height: 0em;
+    line-height: 1em;
+    margin: 0em;
+    padding-top: 0.5em;
   }
 
   .mobile-navbar {
+    display: none;
+  }
+  .contact-button {
+    border: none;
+    border-radius: 1.5em;
+    color: rgb(236, 228, 228);
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 10em;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(13, 14, 14);
+    margin-top: 1em;
+    font-weight: 600;
+  }
+
+  .img-desktop {
     display: none;
   }
 }

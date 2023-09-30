@@ -1,11 +1,9 @@
-import { Button } from "@mui/material";
 import NavBar from "../components/NavBar";
 import "../style/style.css";
 import Footer from "../components/Footer";
 import Project from "../components/Project";
 import { useState } from "react";
 import { project1, project2, project3, project } from "../utils/data";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import "../style/mobile.css";
 import "../style/tablet.css";
 const ProjectsPage = () => {
@@ -28,37 +26,24 @@ const ProjectsPage = () => {
         <div className="aside-10"></div>
         <div className="main-column-80">
           <div className="main-row">
-            <div className="box-column-50">
+            <div className="box-column-30">
               <p className={"bold-text"}>Mina projekt</p>
 
-              <Button
+              <button
                 className="button"
                 onClick={() => handleOnChange("Examensarbete")}
               >
-                Examensarbete
-              </Button>
-              <Button
-                className="button"
-                onClick={() => handleOnChange("Portfolio")}
-              >
-                Portfolio
-              </Button>
-              <Button
+                &gt; Examensarbete
+              </button>
+
+              <button
                 className="button"
                 onClick={() => handleOnChange("Express-API")}
               >
-                Express-API
-              </Button>
-              <a
-                className={"link-desktop"}
-                href=" https://github.com/isabellaes?tab=repositories"
-              >
-                <GitHubIcon
-                  style={{ fontSize: "3em", marginTop: "1em" }}
-                ></GitHubIcon>
-              </a>
+                &gt; Express-API
+              </button>
             </div>
-            <div className="box-column-50">
+            <div className="box-column-70">
               <Project
                 title={project.title}
                 description={project.description}
