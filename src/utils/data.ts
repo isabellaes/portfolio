@@ -11,7 +11,7 @@ export interface project {
   img?: string[];
 }
 
-export const project1: project = {
+export const projectExarbete: project = {
   title: "Examensarbete",
   description:
     "Never Alone is an app for people with mental illness, or people who just want to write down daily notes, track their moods or do some meditations. The idea for this app came from our own history with mental illness and the fact that this is a problem so many people struggle with.",
@@ -26,16 +26,15 @@ export const project2: project = {
   linktogit: "https://github.com/isabellaes/portfolio",
 };
 
-export const project3: project = {
+export const projectExpress: project = {
   title: "Express-API",
   description:
     "Simpelt Express-API med Typescript. Se koden på githubrepot via länken nedan:",
   linktogit: "https://github.com/isabellaes/Express-API/tree/main",
 };
 
-export const project4: project = {
-  title: "ToDo - App",
-  description: "React Native, Typescript",
-  linktogit: "",
-  img: [Exarbete, Exarbete2, Exarbete3],
+export const projectBlog: project = {
+  title: "Blogg",
+  description: "En enkel blogg byggd med React, Typescript, CSS, HTML",
+  linktogit: "https://github.com/isabellaes/blog",
 };

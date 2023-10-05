@@ -3,19 +3,24 @@ import "../style/style.css";
 import Footer from "../components/Footer";
 import Project from "../components/Project";
 import { useState } from "react";
-import { project1, project2, project3, project } from "../utils/data";
+import {
+  projectExarbete,
+  projectExpress,
+  projectBlog,
+  project,
+} from "../utils/data";
 import "../style/mobile.css";
 import "../style/tablet.css";
 const ProjectsPage = () => {
-  const [project, setProject] = useState<project>(project1);
+  const [project, setProject] = useState<project>(projectExarbete);
 
   function handleOnChange(value: string) {
-    if (value === project2.title) {
-      setProject(project2);
-    } else if (value === project1.title && project.title !== value) {
-      setProject(project1);
-    } else if (value === project3.title && project.title !== value) {
-      setProject(project3);
+    if (value === projectExpress.title) {
+      setProject(projectExpress);
+    } else if (value === projectExarbete.title && project.title !== value) {
+      setProject(projectExarbete);
+    } else if (value === projectBlog.title && project.title !== value) {
+      setProject(projectBlog);
     }
   }
 
@@ -41,6 +46,12 @@ const ProjectsPage = () => {
                 onClick={() => handleOnChange("Express-API")}
               >
                 &gt; Express-API
+              </button>
+              <button
+                className="button"
+                onClick={() => handleOnChange("Blogg")}
+              >
+                &gt; Blogg
               </button>
             </div>
             <div className="box-column-70">
