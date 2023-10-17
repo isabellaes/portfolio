@@ -20,7 +20,7 @@ const HomePage = () => {
           <p className="home">
             Frontendutvecklare, React - Student Examen 2025
           </p>
-          <p className="home">Systemutvecklare .Net - Examen 2023</p>
+          <p className="home">Systemutvecklare .Net </p>
 
           <NavLink to="/contact" style={{ textDecoration: "none" }}>
             <p className={"contact-button"}>Kontakta mig</p>
