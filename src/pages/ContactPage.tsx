@@ -1,7 +1,6 @@
-import NavBar from "../components/NavBar";
 import "../style/style.css";
 import ContactForm from "../components/ContactForm";
-import Footer from "../components/Footer";
+
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "../style/mobile.css";
 import "../style/tablet.css";
@@ -10,7 +9,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 const ContactPage = () => {
   return (
     <div className="main-container">
-      <NavBar></NavBar>
       <div className="main-row-100">
         <div className="aside-10"></div>
         <div className="main-column-80">
@@ -36,7 +34,6 @@ const ContactPage = () => {
               <ContactForm></ContactForm>
             </div>
           </div>
-          <Footer></Footer>
         </div>
         <div className="aside-10"></div>
       </div>

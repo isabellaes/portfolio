@@ -1,16 +1,19 @@
 import "../style/style.css";
-import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import "../style/mobile.css";
 import "../style/tablet.css";
 import { NavLink } from "react-router-dom";
 import image from "../assets/profilbild.jpg";
+import ContactForm from "../components/ContactForm";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import AboutPage from "./AboutPage";
+import ProjectsPage from "./ProjectsPage";
 
 const HomePage = () => {
   return (
     <div className={"container-home"}>
-      <NavBar></NavBar>
-      <div className="main-row">
+      <div className="main-row background-gradient">
         <div className="content-home">
           <img
             src={image}
@@ -31,8 +34,35 @@ const HomePage = () => {
           <img src={image} alt="portrait" className={"img-portrait-desktop"} />
         </div>
       </div>
+      <div className="main-row-100-black center">
+        <div className="box-column-30">
+          <h1>Kontakta mig</h1>
+          <div className="row">
+            <a
+              className={"home-linkedin"}
+              href="https://www.linkedin.com/in/isabella-ekdahl-sahlberg-a99828220/"
+            >
+              <LinkedInIcon sx={{ fontSize: 60 }}></LinkedInIcon>
+            </a>
+            <a
+              className={"home-linkedin"}
+              href=" https://github.com/isabellaes?tab=repositories"
+            >
+              <GitHubIcon sx={{ fontSize: 60 }}></GitHubIcon>
+            </a>
+          </div>
+        </div>
+        <div className="box-column-30">
+          <ContactForm></ContactForm>
+        </div>
+      </div>
+      {/*   <div className="main-row-100-black">
+        <AboutPage></AboutPage>
+      </div> */}
 
-      <Footer></Footer>
+      <div className="main-row background-gradient-reverse">
+        <ProjectsPage></ProjectsPage>
+      </div>
     </div>
   );
 };
