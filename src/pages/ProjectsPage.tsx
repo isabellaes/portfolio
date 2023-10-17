@@ -25,34 +25,45 @@ const ProjectsPage = () => {
   }
 
   return (
-    <div className="main-row">
-      <div className="box-column-30">
-        <p className={"bold-text"}>Mina projekt</p>
+    <div className="main-container">
+      <div className="main-row-100">
+        <div className="aside-10"></div>
+        <div className="main-column-80">
+          <div className="main-row">
+            <div className="box-column-30">
+              <p className={"bold-text"}>Mina projekt</p>
 
-        <button
-          className="button"
-          onClick={() => handleOnChange("Examensarbete")}
-        >
-          &gt; Examensarbete
-        </button>
+              <button
+                className="button"
+                onClick={() => handleOnChange("Examensarbete")}
+              >
+                &gt; Examensarbete
+              </button>
 
-        <button
-          className="button"
-          onClick={() => handleOnChange("Express-API")}
-        >
-          &gt; Express-API
-        </button>
-        <button className="button" onClick={() => handleOnChange("Blogg")}>
-          &gt; Blogg
-        </button>
-      </div>
-      <div className="box-column-70">
-        <Project
-          title={project.title}
-          description={project.description}
-          linktogit={project.linktogit}
-          img={project.img}
-        ></Project>
+              <button
+                className="button"
+                onClick={() => handleOnChange("Express-API")}
+              >
+                &gt; Express-API
+              </button>
+              <button
+                className="button"
+                onClick={() => handleOnChange("Blogg")}
+              >
+                &gt; Blogg
+              </button>
+            </div>
+            <div className="box-column-70">
+              <Project
+                title={project.title}
+                description={project.description}
+                linktogit={project.linktogit}
+                img={project.img}
+              ></Project>
+            </div>
+          </div>
+        </div>
+        <div className="aside-10"></div>
       </div>
     </div>
   );
