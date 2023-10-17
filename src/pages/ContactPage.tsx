@@ -20,13 +20,15 @@ const ContactPage = () => {
                 className={"link-desktop"}
                 href="https://www.linkedin.com/in/isabella-ekdahl-sahlberg-a99828220/"
               >
-                <LinkedInIcon></LinkedInIcon>
+                <LinkedInIcon
+                  sx={{ fontSize: 50, color: "black" }}
+                ></LinkedInIcon>
               </a>
               <a
                 className={"link-desktop"}
                 href=" https://github.com/isabellaes?tab=repositories"
               >
-                <GitHubIcon></GitHubIcon>
+                <GitHubIcon sx={{ fontSize: 45, color: "black" }}></GitHubIcon>
               </a>
             </div>
 
