@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import "../style/mobile.css";
 import "../style/tablet.css";
 import { NavLink } from "react-router-dom";
-import image from "../assets/profilbild.jpg";
+import image from "../assets/milad-fakurian-vQAVWrAP3fg-unsplash.jpg";
 
 const HomePage = () => {
   return (
@@ -17,9 +17,7 @@ const HomePage = () => {
             className={"img-portrait-tabletmobile"}
           />
           <h1>Hi, I'm Isabella.</h1>
-          <p className="home">
-            Frontendutvecklare, React - Student Examen 2025
-          </p>
+          <p className="home">Frontendutvecklare, React</p>
           <p className="home">Systemutvecklare .Net </p>
 
           <NavLink to="/contact" style={{ textDecoration: "none" }}>
@@ -27,7 +25,7 @@ const HomePage = () => {
           </NavLink>
         </div>
         <div className="content-home-img">
-          <img src={image} alt="portrait" className={"img-portrait-desktop"} />
+          {/*   <img src={image} alt="portrait" className={"img-portrait-desktop"} /> */}
         </div>
       </div>
     </div>
