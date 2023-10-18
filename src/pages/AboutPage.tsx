@@ -9,8 +9,16 @@ const AboutPage = () => {
       <div className="main-column-80">
         <div className="box-column-50">
           <h1 className={"bold-text"}>Om mig</h1>
-          <img src={image} className="img-portrait-desktop-about"></img>
-          <img src={image} className="img-portrait-tabletmobile"></img>
+          <img
+            src={image}
+            className="img-portrait-desktop-about"
+            alt="portrait"
+          ></img>
+          <img
+            src={image}
+            className="img-portrait-tabletmobile"
+            alt="portrait"
+          ></img>
           <h6>Namn:</h6>
           <p>Isabella Ekdahl Sahlberg</p>
           <h6>Ålder:</h6>
