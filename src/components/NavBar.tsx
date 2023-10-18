@@ -40,7 +40,10 @@ const NavBar = () => {
 
           <div className="mobile-navbar">
             <IconButton aria-label="menu" onClick={handleOnClick}>
-              <MenuIcon className="menu-icon"></MenuIcon>
+              <MenuIcon
+                className="menu-icon"
+                sx={{ fontSize: "1.5em" }}
+              ></MenuIcon>
             </IconButton>
           </div>
         </div>

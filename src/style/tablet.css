@@ -58,7 +58,7 @@
     text-decoration: none;
     display: inline-block;
     transition-duration: 0.4s;
-    font-size: 1.2em;
+    font-size: 1em;
     cursor: pointer;
     width: 12em;
     font-family: "Montserrat", sans-serif;
@@ -69,12 +69,12 @@
   p {
     font-family: "Montserrat", sans-serif;
     color: black;
-    font-size: 1.2em;
+    font-size: 0.9em;
   }
 
   h6 {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.2em;
+    font-size: 0.9em;
     padding: 0;
     margin: 0;
   }
@@ -174,7 +174,7 @@
 
   .Link {
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
+    font-size: 1em;
     color: rgb(236, 228, 228);
     font-weight: 600;
     text-align: center;
@@ -183,7 +183,7 @@
 
   .Link-p {
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
+    font-size: 1.2em;
     color: rgb(144, 144, 144);
     text-align: center;
     padding: 10px;
@@ -230,7 +230,7 @@
   .container-home {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
   }
@@ -238,21 +238,21 @@
     display: flex;
     flex-direction: column;
     width: 80%;
-    padding: 4em;
+    padding: 1em;
     height: 100%;
     box-sizing: border-box;
     flex-grow: 1;
+    margin-top: 30%;
   }
 
   .content-home h1 {
-    font-size: 6em;
-    margin-top: 30%;
+    font-size: 4em;
     font-family: "Bebas Neue", sans-serif;
     color: rgb(236, 228, 228);
     font-weight: 800;
   }
   .home {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: "Montserrat", sans-serif;
     color: rgb(236, 228, 228);
     margin: 0;
@@ -277,7 +277,7 @@
     font-family: "Montserrat", sans-serif;
     background-color: #1913bf;
     margin-top: 3em;
-    margin-left: 2em;
+    margin-left: 1em;
     font-weight: 600;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
