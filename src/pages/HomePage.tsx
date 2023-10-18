@@ -1,21 +1,12 @@
 import "../style/style.css";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import "../style/mobile.css";
 import "../style/tablet.css";
 import { NavLink } from "react-router-dom";
-import image from "../assets/milad-fakurian-vQAVWrAP3fg-unsplash.jpg";
-
 const HomePage = () => {
   return (
-    <div className={"container-home  center background-gradient"}>
-      <div className="main-row-80 ">
+    <div className={"main-container background-gradient"}>
+      <div className="main-column-80">
         <div className="content-home">
-          <img
-            src={image}
-            alt="portrait"
-            className={"img-portrait-tabletmobile"}
-          />
           <h1>Hi, I'm Isabella.</h1>
           <p className="home">Frontendutvecklare, React</p>
           <p className="home">Systemutvecklare .Net </p>

@@ -1,38 +1,21 @@
 @media only screen and (min-width: 992px) {
   .main-container {
     display: flex;
-    flex-direction: column;
-    height: max-content 100vh;
+    justify-content: center;
+    flex-direction: row;
+    min-height: 100vh;
     width: max-content 100vw;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
-  .main-row-100 {
-    display: flex;
-    flex-direction: row;
-  }
-  .main-row {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: row;
-    width: 80%;
-  }
-
-  .aside-10 {
-    padding: 0;
-    margin: 0;
-    width: 10%;
-    background-color: rgb(223, 230, 239);
-  }
 
   .main-column-80 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 3em;
-    margin: 0;
+    margin-top: 0.5em;
     width: 80%;
-    background-color: rgb(223, 230, 239);
     box-sizing: border-box;
   }
   .box-column-50 {
@@ -63,7 +46,7 @@
     padding: 2em;
     margin: 0;
     box-sizing: border-box;
-    background-color: #222;
+    background-color: #9713bf;
   }
 
   .footer p {
@@ -73,12 +56,12 @@
   p {
     font-family: "Montserrat", sans-serif;
     color: black;
-    font-size: 15px;
+    font-size: 1.2em;
   }
 
   h6 {
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 1.2em;
     padding: 0;
     margin: 0;
   }
@@ -94,7 +77,6 @@
     display: flex;
     flex-direction: row;
     height: max-content 100vh;
-    /* padding: 20px; */
   }
 
   .container-projects-column {
@@ -124,20 +106,17 @@
 
   .container-home {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
     width: max-content 100vw;
     min-height: 100vh;
     box-sizing: border-box;
   }
 
-  .background-dark {
-    background-color: rgb(13, 14, 14);
-  }
   .content-home {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     padding: 4em;
     height: 100%;
     box-sizing: border-box;
@@ -147,7 +126,7 @@
   .content-home-img {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -184,7 +163,7 @@
     cursor: pointer;
     width: 10em;
     font-family: "Montserrat", sans-serif;
-    background-color: rgb(0, 0, 0);
+    background-color: #1913bf;
     margin-top: 3em;
     margin-left: 2em;
     font-weight: 600;
@@ -234,7 +213,7 @@
     width: fit-content;
     padding: 3em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: rgb(223, 230, 239);
+    background-color: rgb(255, 255, 255);
     border-radius: 1em;
     margin-top: 5em;
   }
@@ -311,6 +290,7 @@
   .mobile-navbar {
     display: none;
   }
+
   .Nav-Bar-Box-right img {
     width: 40px;
     display: flex;
@@ -319,57 +299,9 @@
   .main-row-100-black {
     display: flex;
     flex-direction: row;
-    background-color: rgb(13, 14, 14);
   }
 
-  .center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .box-column-30 h1 {
-    font-size: 4em;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 800;
-    color: rgb(114, 114, 251);
-  }
-  .box-column-30 h3 {
-    font-size: 3em;
-
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 800;
-    color: rgb(114, 114, 251);
-    margin: 0;
-    padding: 0;
-  }
-
-  .home-linkedin {
-    color: rgb(114, 114, 251);
-    margin: 0;
-    padding: 0;
-    font-size: 3em;
-    text-decoration: none;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 800;
-  }
-  .row {
-    display: flex;
-    flex-direction: row;
-  }
   .background-gradient {
     background: linear-gradient(#1913bf, #5213bf, #9713bf);
-  }
-  .background-gradient-reverse {
-    background: linear-gradient(rgb(114, 114, 251), rgb(47, 17, 119));
-  }
-
-  .background-light {
-    background-color: rgb(114, 114, 251);
-  }
-  .main-row-80 {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
   }
 }
