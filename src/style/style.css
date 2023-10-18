@@ -1,42 +1,22 @@
 @media only screen and (min-width: 992px) {
   .main-container {
     display: flex;
-    flex-direction: column;
-    height: max-content 100vh;
+    justify-content: center;
+    flex-direction: row;
+    min-height: 100vh;
     width: max-content 100vw;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
-  .main-row-100 {
-    display: flex;
-    flex-direction: row;
-  }
-  .main-row {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: row;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  .aside-10 {
-    padding: 0;
-    margin: 0;
-    width: 10%;
-    background: linear-gradient(rgb(47, 17, 119), rgb(114, 114, 251));
-  }
 
   .main-column-80 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 3em;
-    margin: 0;
+    margin-top: 0.5em;
     width: 80%;
-    background-color: rgb(223, 230, 239);
     box-sizing: border-box;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .box-column-50 {
     display: flex;
@@ -63,22 +43,25 @@
     display: flex;
     flex-direction: column;
     height: fit-content;
-    padding-left: 2em;
-    padding-top: 1em;
-    margin: 2rem;
-    border-top: 1px solid rgb(103, 182, 251);
+    padding: 2em;
+    margin: 0;
     box-sizing: border-box;
+    background-color: #9713bf;
+  }
+
+  .footer p {
+    color: rgb(236, 228, 228);
   }
 
   p {
     font-family: "Montserrat", sans-serif;
     color: black;
-    font-size: 15px;
+    font-size: 1.2em;
   }
 
   h6 {
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 1.2em;
     padding: 0;
     margin: 0;
   }
@@ -86,6 +69,7 @@
     font-size: 2em;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
+    color: black;
   }
 
   /* Style for projectcomponent */
@@ -93,7 +77,6 @@
     display: flex;
     flex-direction: row;
     height: max-content 100vh;
-    /* padding: 20px; */
   }
 
   .container-projects-column {
@@ -116,23 +99,24 @@
     width: 12em;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    background-color: rgb(223, 230, 239);
+    background-color: inherit;
   }
 
   /* HomePage */
 
   .container-home {
     display: flex;
-    flex-direction: column;
-    background: linear-gradient(rgb(47, 17, 119), rgb(114, 114, 251));
+    flex-direction: row;
+
     width: max-content 100vw;
     min-height: 100vh;
     box-sizing: border-box;
   }
+
   .content-home {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     padding: 4em;
     height: 100%;
     box-sizing: border-box;
@@ -142,7 +126,7 @@
   .content-home-img {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -152,17 +136,18 @@
   }
 
   .content-home h1 {
-    font-size: 4em;
+    font-size: 6em;
     margin-top: 30%;
     font-family: "Bebas Neue", sans-serif;
+    color: rgb(236, 228, 228);
     font-weight: 800;
   }
   .home {
     font-size: 2em;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(236, 228, 228);
     margin: 0;
     padding: 0;
-    line-height: 1em;
   }
 
   .contact-button {
@@ -178,9 +163,11 @@
     cursor: pointer;
     width: 10em;
     font-family: "Montserrat", sans-serif;
-    background-color: rgb(13, 14, 14);
-    margin-top: 1em;
+    background-color: #1913bf;
+    margin-top: 3em;
+    margin-left: 2em;
     font-weight: 600;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .img-desktop {
@@ -200,10 +187,21 @@
   }
   .img-portrait-desktop {
     float: right;
-    width: 70%;
+    width: fit-content;
+    margin-bottom: 2em;
     border: 1px solid black;
     box-sizing: border-box;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(168, 166, 166, 0.2),
+      0 6px 20px 0 rgba(253, 253, 253, 0.19);
+  }
+
+  .img-portrait-desktop-about {
+    float: right;
+    width: 50%;
+    margin-bottom: 2em;
+    border: 1px solid black;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.2), 0 6px 20px 0 rgba(9, 9, 9, 0.19);
   }
 
   /* Style for contactcomponent */
@@ -213,8 +211,11 @@
     font-family: "Montserrat", sans-serif;
     align-items: center;
     width: fit-content;
-    padding: 1em;
+    padding: 3em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(255, 255, 255);
+    border-radius: 1em;
+    margin-top: 5em;
   }
 
   .submit-button {
@@ -238,6 +239,7 @@
     width: 8em;
     font-family: "Montserrat", sans-serif;
     background-color: rgb(13, 14, 14);
+    box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.2), 0 6px 20px 0 rgba(9, 9, 9, 0.19);
     margin-top: 1em;
     margin-bottom: 1em;
     font-weight: 600;
@@ -257,7 +259,7 @@
   .Link-p {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
-    color: rgb(120, 208, 239);
+    color: rgb(144, 144, 144);
     text-align: center;
     padding: 10px;
   }
@@ -265,7 +267,7 @@
   .Nav-Bar-Box {
     height: 5em;
     display: flex;
-    background-color: rgb(13, 14, 14);
+    background-color: #1913bf;
     flex-direction: row;
     padding-right: 2em;
     align-items: center;
@@ -276,7 +278,7 @@
   .Nav-Bar-Box-right {
     height: 5em;
     display: flex;
-    background-color: rgb(13, 14, 14);
+    background-color: #1913bf;
     flex-direction: row;
     padding-left: 2em;
     align-items: center;
@@ -288,6 +290,7 @@
   .mobile-navbar {
     display: none;
   }
+
   .Nav-Bar-Box-right img {
     width: 40px;
     display: flex;
@@ -296,6 +299,9 @@
   .main-row-100-black {
     display: flex;
     flex-direction: row;
-    background-color: rgb(13, 14, 14);
+  }
+
+  .background-gradient {
+    background: linear-gradient(#1913bf, #5213bf, #9713bf);
   }
 }

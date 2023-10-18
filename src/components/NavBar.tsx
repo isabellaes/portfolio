@@ -19,7 +19,7 @@ const NavBar = () => {
     <Box sx={{ flexGrow: 1 }}>
       <div className="main-row-100-black">
         <div className="Nav-Bar-Box-right">
-          <img src={IconNavbar} alt="icon" />
+          <p className={"Link"}>I E S</p>
         </div>
         <div className="Nav-Bar-Box">
           <NavLink to="/" style={{ textDecoration: "none" }}>
