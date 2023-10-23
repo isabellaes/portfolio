@@ -49,29 +49,26 @@ const Project = (props: project) => {
           <p>Länk till Github Projektet</p>
         </a>
       </div>
-      {props.img ? (
-        <div className={"container-projects-row"}>
-          <IconButton
-            onClick={handleClickBack}
-            style={{ textDecoration: "none" }}
-            disableRipple={true}
-          >
-            <ArrowBackIosIcon></ArrowBackIosIcon>
-          </IconButton>
-          <img src={image} alt="project" className={"img-tabletmobile"} />
-          <img src={image} alt="project" className={"img-desktop"} />
 
-          <IconButton
-            onClick={handleClickForward}
-            style={{ textDecoration: "none" }}
-            disableRipple={true}
-          >
-            <ArrowForwardIosIcon></ArrowForwardIosIcon>
-          </IconButton>
-        </div>
-      ) : (
-        <p>Inga bilder</p>
-      )}
+      <div className={"container-projects-row"}>
+        <IconButton
+          onClick={handleClickBack}
+          style={{ textDecoration: "none", color: "#4e85ee" }}
+          disableRipple={true}
+        >
+          <ArrowBackIosIcon></ArrowBackIosIcon>
+        </IconButton>
+        <img src={image} alt="project" className={"img-tabletmobile"} />
+        <img src={image} alt="project" className={"img-desktop"} />
+
+        <IconButton
+          onClick={handleClickForward}
+          style={{ textDecoration: "none", color: "#4e85ee" }}
+          disableRipple={true}
+        >
+          <ArrowForwardIosIcon></ArrowForwardIosIcon>
+        </IconButton>
+      </div>
     </Box>
   );
 };

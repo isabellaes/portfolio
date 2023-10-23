@@ -1,5 +1,6 @@
 import { Box, IconButton } from "@mui/material";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import "../style/mobile.css";
 import "../style/style.css";
 import "../style/tablet.css";
@@ -16,27 +17,27 @@ const NavBar = () => {
     }
   }
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, position: "fixed", width: "100vw" }}>
       <div className="main-row-100-black">
         <div className="Nav-Bar-Box-right">
           <p className={"Link"}>I E S</p>
         </div>
         <div className="Nav-Bar-Box">
-          <NavLink to="/" style={{ textDecoration: "none" }}>
+          <Link to="Home" style={{ textDecoration: "none" }}>
             <p className={"Link"}>Hem</p>
-          </NavLink>
+          </Link>
           <p className="Link-p">|</p>
-          <NavLink to="/about" style={{ textDecoration: "none" }}>
+          <Link to="About" style={{ textDecoration: "none" }}>
             <p className={"Link"}>Om</p>
-          </NavLink>
+          </Link>
           <p className="Link-p">|</p>
-          <NavLink to="/projects" style={{ textDecoration: "none" }}>
+          <Link to="Project" style={{ textDecoration: "none" }}>
             <p className={"Link"}>Projekt</p>
-          </NavLink>
+          </Link>
           <p className="Link-p">|</p>
-          <NavLink to="/contact" style={{ textDecoration: "none" }}>
+          <Link to="Contact" style={{ textDecoration: "none" }}>
             <p className={"Link"}>Kontakt</p>
-          </NavLink>
+          </Link>
 
           <div className="mobile-navbar">
             <IconButton aria-label="menu" onClick={handleOnClick}>
@@ -50,21 +51,21 @@ const NavBar = () => {
       </div>
       {menu ? (
         <div className="drop-down-menu">
-          <NavLink to="/" style={{ textDecoration: "none" }}>
+          <Link to="/" style={{ textDecoration: "none" }}>
             <p className={"Link-drop-down"}>Hem</p>
-          </NavLink>
+          </Link>
 
-          <NavLink to="/about" style={{ textDecoration: "none" }}>
+          <Link to="/about" style={{ textDecoration: "none" }}>
             <p className={"Link-drop-down"}>Om</p>
-          </NavLink>
+          </Link>
 
-          <NavLink to="/projects" style={{ textDecoration: "none" }}>
+          <Link to="/projects" style={{ textDecoration: "none" }}>
             <p className={"Link-drop-down"}>Projekt</p>
-          </NavLink>
+          </Link>
 
-          <NavLink to="/contact" style={{ textDecoration: "none" }}>
+          <Link to="/contact" style={{ textDecoration: "none" }}>
             <p className={"Link-drop-down"}>Kontakt</p>
-          </NavLink>
+          </Link>
         </div>
       ) : (
         <div></div>

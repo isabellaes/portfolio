@@ -33,52 +33,45 @@ const ContactForm = () => {
       .then(
         (result) => {
           // show the user a success message
-          alert("Meddelande skickat!");
-          navigate("/contact");
         },
         (error) => {
           // show the user an error
-          alert("Error");
-          navigate("/contact");
         }
       );
   };
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <p className="bold-text">Kontaktformulär</p>
-      <form onSubmit={sendEmail} className={"form-container"}>
-        <TextField
-          required
-          id="outlined-basic"
-          label="Namn"
-          variant="filled"
-          style={{ marginBottom: "1em" }}
-          className={"TextField"}
-          onChange={(e) => setName(e.target.value)}
-        />
-        <TextField
-          required
-          id="outlined-basic"
-          variant="filled"
-          label="E-post"
-          style={{ marginBottom: "1em" }}
-          className={"TextField"}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <TextField
-          required
-          id="outlined-multiline-static"
-          variant="filled"
-          label="Meddelande"
-          multiline
-          rows={4}
-          style={{ marginBottom: "1em" }}
-          className={"TextField"}
-          onChange={(e) => setMessage(e.target.value)}
-        />
-        <button className="contact-button-2">Skicka</button>
-      </form>
-    </Box>
+    <form onSubmit={sendEmail} className={"form-container"}>
+      <TextField
+        required
+        id="outlined-basic"
+        label="Namn"
+        variant="filled"
+        style={{ marginBottom: "1em" }}
+        className={"TextField"}
+        onChange={(e) => setName(e.target.value)}
+      />
+      <TextField
+        required
+        id="outlined-basic"
+        variant="filled"
+        label="E-post"
+        style={{ marginBottom: "1em" }}
+        className={"TextField"}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <TextField
+        required
+        id="outlined-multiline-static"
+        variant="filled"
+        label="Meddelande"
+        multiline
+        rows={4}
+        style={{ marginBottom: "1em" }}
+        className={"TextField"}
+        onChange={(e) => setMessage(e.target.value)}
+      />
+      <button className="contact-button-2">Skicka</button>
+    </form>
   );
 };
 
