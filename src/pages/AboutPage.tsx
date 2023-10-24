@@ -7,20 +7,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const AboutPage = () => {
   return (
-    <section id="About" className="main-container background-light border-blue">
+    <section id="About" className="main-container">
       <h1 className={"bold-text"}>Om mig</h1>
       <section className="box-column-50">
         <section>
-          <img
-            src={image}
-            className="img-portrait-desktop-about"
-            alt="portrait"
-          ></img>
-          <img
-            src={image}
-            className="img-portrait-tabletmobile"
-            alt="portrait"
-          ></img>
+          <img src={image} className="img-portrait" alt="portrait"></img>
 
           <p>
             Jag heter Isabella Ekdahl Sahlberg. Jag är 31 år och bor i Borås

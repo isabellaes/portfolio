@@ -1,18 +1,14 @@
-import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import "../style/mobile.css";
 import "../style/style.css";
 import "../style/tablet.css";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 const ContactForm = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
-  const navigate = useNavigate();
 
   const sendEmail = (e: { preventDefault: () => void }) => {
     e.preventDefault();
@@ -33,9 +29,11 @@ const ContactForm = () => {
       .then(
         (result) => {
           // show the user a success message
+          alert(result.text);
         },
         (error) => {
           // show the user an error
+          alert(error);
         }
       );
   };

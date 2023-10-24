@@ -56,8 +56,8 @@ const Project = (props: project) => {
         >
           <ArrowBackIosIcon></ArrowBackIosIcon>
         </IconButton>
-        <img src={image} alt="project" className={"img-tabletmobile"} />
-        <img src={image} alt="project" className={"img-desktop"} />
+
+        <img src={image} alt="project" className={"img-project"} />
 
         <IconButton
           onClick={handleClickForward}

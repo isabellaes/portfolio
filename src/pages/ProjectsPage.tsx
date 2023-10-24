@@ -5,7 +5,7 @@ import { projects } from "../utils/data";
 import Project from "../components/Project";
 const ProjectsPage = () => {
   return (
-    <div id="Project" className="main-container background-light border-blue">
+    <div id="Project" className="main-container">
       <p className={"bold-text"}>Mina projekt</p>
       {projects.flatMap((project) => (
         <Project

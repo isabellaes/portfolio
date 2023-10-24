@@ -5,7 +5,7 @@ import "../style/tablet.css";
 
 const ContactPage = () => {
   return (
-    <section id="Contact" className="main-container background-light">
+    <section id="Contact" className="main-container">
       <p className={"bold-text"}>Kontakta mig</p>
       <ContactForm></ContactForm>
     </section>

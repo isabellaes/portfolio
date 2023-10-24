@@ -7,10 +7,7 @@ import { skills } from "../utils/data";
 
 const SkillsPage = () => {
   return (
-    <section
-      id="Skills"
-      className="main-container background-light border-blue"
-    >
+    <section id="Skills" className="main-container">
       <h1 className={"bold-text"}>Erfarenheter</h1>
 
       <section className="box-column-50">
@@ -23,9 +20,14 @@ const SkillsPage = () => {
         </section>
         <section>
           <h6>Stack</h6>
-          <Stack direction="row" spacing={2}>
+          <Stack spacing={0.5} direction="row" useFlexGap flexWrap="wrap">
             {skills.map((x) => (
-              <Chip label={x} variant="outlined" color="info"></Chip>
+              <Chip
+                label={x}
+                variant="filled"
+                color="info"
+                sx={{ marginInline: "1em" }}
+              ></Chip>
             ))}
           </Stack>
         </section>
