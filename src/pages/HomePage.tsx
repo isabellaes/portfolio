@@ -6,6 +6,7 @@ import { Link } from "react-scroll";
 import AboutPage from "./AboutPage";
 import ProjectsPage from "./ProjectsPage";
 import ContactPage from "./ContactPage";
+import SkillsPage from "./SkillsPage";
 
 const HomePage = () => {
   return (
@@ -15,13 +16,15 @@ const HomePage = () => {
           <h1>
             I'm <span className="color-blue"> Isabella.</span>
           </h1>
-          <p className="home">Fullstackutvecklare</p>
+          <p className="home">Frontendutvecklare, React - student</p>
+
           <Link to="Contact" className="contact-button">
             Kontakta mig
           </Link>
         </section>
       </section>
       <AboutPage></AboutPage>
+      <SkillsPage></SkillsPage>
       <ProjectsPage></ProjectsPage>
       <ContactPage></ContactPage>
     </section>

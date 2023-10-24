@@ -60,11 +60,14 @@
     font-size: 0.9em;
   }
 
+  .italic {
+    font-style: italic;
+  }
+
   h6 {
     font-family: "Montserrat", sans-serif;
     font-size: 0.9em;
-    padding: 0;
-    margin: 0;
+    color: rgb(236, 228, 228);
   }
   .bold-text {
     font-size: 1.5em;
@@ -325,5 +328,10 @@
 
   .border-blue {
     border-bottom: #4e85ee 1px solid;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
   }
 }

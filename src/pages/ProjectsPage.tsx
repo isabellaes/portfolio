@@ -12,6 +12,7 @@ const ProjectsPage = () => {
           title={project.title}
           description={project.description}
           img={project.img}
+          linktogit={project.linktogit}
         ></Project>
       ))}
     </div>
