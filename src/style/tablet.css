@@ -1,8 +1,7 @@
 @media only screen and (min-width: 600px) and (max-width: 992px) {
   /* Styling */
   .color-blue,
-  a:hover,
-  .active {
+  a:hover {
     color: #4e85ee;
   }
 
@@ -196,6 +195,9 @@
     display: flex;
     flex-direction: row;
     background-color: #00030ccf;
+  }
+  .active {
+    color: #4e85ee !important;
   }
   /* HomePage */
 
