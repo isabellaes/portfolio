@@ -1,176 +1,75 @@
 @media only screen and (min-width: 992px) {
-  .main-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    min-height: 100vh;
-    width: max-content 100vw;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  /* Styling */
+  .color-blue,
+  a:hover {
+    color: #4e85ee;
   }
 
-  .main-column-80 {
+  .flex-row {
     display: flex;
     flex-direction: row;
-    padding: 1em;
-    margin-top: 0.5em;
-    width: 80%;
+  }
+  body {
+    background-color: #00030c;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: max-content 100vw;
     box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10em;
+    padding-bottom: 10em;
   }
   .box-column-50 {
     display: flex;
     flex-direction: column;
     padding-left: 2em;
     margin: 0;
-    width: 50%;
-  }
-  .box-column-30 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 2em;
-    margin: 0;
-    width: 30%;
-  }
-  .box-column-70 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 2em;
-    margin: 0;
-    width: 70%;
-  }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    padding: 2em;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: #9713bf;
-  }
-
-  .footer p {
-    color: rgb(236, 228, 228);
+    width: 60%;
   }
 
   p {
     font-family: "Montserrat", sans-serif;
-    color: black;
+    color: rgb(236, 228, 228);
     font-size: 0.9em;
+  }
+
+  .italic {
+    font-style: italic;
   }
 
   h6 {
     font-family: "Montserrat", sans-serif;
     font-size: 0.9em;
-    padding: 0;
-    margin: 0;
+    color: rgb(236, 228, 228);
   }
   .bold-text {
     font-size: 1.5em;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
-    color: black;
+    color: rgb(236, 228, 228);
   }
 
   /* Style for projectcomponent */
   .container-projects-row {
     display: flex;
     flex-direction: row;
-    height: max-content 100vh;
-  }
-
-  .container-projects-column {
-    display: flex;
-    flex-direction: column;
-    height: max-content 100vh;
-    padding: 10px;
-  }
-
-  .button {
-    border: none;
-    color: black;
-    padding: 0.8em;
-    text-align: left;
-    text-decoration: none;
-    display: inline-block;
-    transition-duration: 0.4s;
-    font-size: 1em;
-    cursor: pointer;
-    width: 12em;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    background-color: inherit;
-  }
-
-  /* HomePage */
-
-  .container-home {
-    display: flex;
-    flex-direction: row;
-
-    width: max-content 100vw;
-    min-height: 100vh;
-    box-sizing: border-box;
-  }
-
-  .content-home {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    padding: 1em;
-    height: 100%;
-    box-sizing: border-box;
-    flex-grow: 1;
-  }
-
-  .content-home-img {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    justify-content: center;
     align-items: center;
-    height: 100%;
-    box-sizing: border-box;
-    flex-grow: 1;
-    padding: 6em;
+    justify-content: center;
   }
 
-  .content-home h1 {
-    font-size: 5em;
-    margin-top: 20%;
-    font-family: "Bebas Neue", sans-serif;
-    color: rgb(236, 228, 228);
-    font-weight: 800;
-  }
-  .home {
-    font-size: 1.2em;
-    font-family: "Montserrat", sans-serif;
-    color: rgb(236, 228, 228);
-    margin: 0;
-    padding: 0;
+  .container-project-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  .contact-button {
-    border: none;
-    border-radius: 1.5em;
-    color: rgb(236, 228, 228);
-    padding: 1em;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    transition-duration: 0.4s;
-    font-size: 1.2em;
-    cursor: pointer;
-    width: 10em;
-    font-family: "Montserrat", sans-serif;
-    background-color: #1913bf;
-    margin-top: 3em;
-
-    font-weight: 600;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  .img-desktop {
+  .img-project {
     float: right;
     width: 50%;
     border: 1px solid black;
@@ -179,27 +78,74 @@
     box-sizing: border-box;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  .img-tabletmobile {
-    display: none;
-  }
-  .img-portrait-tabletmobile {
-    display: none;
-  }
-  .img-portrait-desktop {
-    float: right;
-    width: fit-content;
-    margin-bottom: 2em;
-    border: 1px solid black;
+
+  /* HomePage */
+
+  .container-home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: max-content 100vw;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    box-shadow: 0 4px 8px 0 rgba(168, 166, 166, 0.2),
-      0 6px 20px 0 rgba(253, 253, 253, 0.19);
+    justify-content: center;
+    align-items: center;
   }
 
-  .img-portrait-desktop-about {
+  .content-home {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10%;
+    width: 100%;
+    background: linear-gradient(#131923, #06060c);
+    box-sizing: border-box;
+    flex-grow: 1;
+  }
+
+  .content-home h1 {
+    font-size: 4em;
+    margin-top: 2em;
+    font-family: "Bebas Neue", sans-serif;
+    color: rgb(236, 228, 228);
+    font-weight: 800;
+    padding-left: 5%;
+  }
+  .content-home p {
+    font-size: 1.2em;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(236, 228, 228);
+    margin: 0;
+    padding-left: 5%;
+  }
+
+  .contact-button {
+    border: none;
+    border-radius: 1.5em;
+    color: rgb(236, 228, 228);
+    padding: 0.8em;
+    margin-left: 5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    font-size: 1em;
+    cursor: pointer;
+    width: 8em;
+    font-family: "Montserrat", sans-serif;
+    background-color: #4e85ee;
+    margin-top: 1em;
+    font-weight: 600;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  /* Aboutpage */
+
+  .img-portrait {
     float: right;
-    width: 50%;
-    margin-bottom: 2em;
-    border: 1px solid black;
+    width: 30%;
+    margin-left: 1em;
     box-sizing: border-box;
     box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.2), 0 6px 20px 0 rgba(9, 9, 9, 0.19);
   }
@@ -214,8 +160,6 @@
     padding: 3em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: rgb(255, 255, 255);
-    border-radius: 1em;
-    margin-top: 5em;
   }
 
   .submit-button {
@@ -238,7 +182,7 @@
     cursor: pointer;
     width: 8em;
     font-family: "Montserrat", sans-serif;
-    background-color: rgb(13, 14, 14);
+    background-color: #4e85ee;
     box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.2), 0 6px 20px 0 rgba(9, 9, 9, 0.19);
     margin-top: 1em;
     margin-bottom: 1em;
@@ -264,23 +208,21 @@
     padding: 10px;
   }
 
-  .Nav-Bar-Box {
+  .Nav-Bar-Box-right {
     height: 5em;
     display: flex;
-    background-color: #1913bf;
     flex-direction: row;
-    padding-right: 2em;
+    padding-right: 10%;
     align-items: center;
     justify-content: right;
     box-sizing: border-box;
     width: 50%;
   }
-  .Nav-Bar-Box-right {
+  .Nav-Bar-Box-left {
     height: 5em;
     display: flex;
-    background-color: #1913bf;
     flex-direction: row;
-    padding-left: 2em;
+    padding-left: 10%;
     align-items: center;
     justify-content: left;
     box-sizing: border-box;
@@ -291,17 +233,22 @@
     display: none;
   }
 
-  .Nav-Bar-Box-right img {
-    width: 40px;
-    display: flex;
-    justify-content: left;
-  }
   .main-row-100-black {
     display: flex;
     flex-direction: row;
+    background-color: #00030ccf;
   }
-
-  .background-gradient {
-    background: linear-gradient(#1913bf, #5213bf, #9713bf);
+  .active {
+    color: #4e85ee !important;
+  }
+  /* Footer */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 2em;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #00030c;
   }
 }

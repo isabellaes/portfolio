@@ -7,6 +7,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import IconButton from "@mui/material/IconButton";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { project } from "../utils/data";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Project = (props: project) => {
   const [image, setImage] = useState<string>();
@@ -18,8 +19,6 @@ const Project = (props: project) => {
   function handleClickForward() {
     if (props.img && image !== undefined) {
       const index = props.img.indexOf(image) + 1;
-      console.log(props.img[index]);
-      console.log(index);
       if (props.img[index] !== undefined) {
         setImage(props.img[index]);
       } else {
@@ -30,12 +29,11 @@ const Project = (props: project) => {
   function handleClickBack() {
     if (props.img && image !== undefined) {
       const index = props.img.indexOf(image) - 1;
-      console.log(index);
+
       if (props.img[index] !== undefined) {
         setImage(props.img[index]);
       } else {
         const lastIndex = props.img.length - 1;
-        console.log(lastIndex);
         setImage(props.img[lastIndex]);
       }
     }
@@ -43,35 +41,32 @@ const Project = (props: project) => {
   return (
     <Box>
       <div className={"container-project-column"}>
-        <p className={"bold-text"}>{props.title}</p>
-        <p>{props.description}</p>
-        <a href={props.linktogit}>
-          <p>Länk till Github Projektet</p>
+        <h6>{props.title}</h6>
+        <p>Klicka på ikonen för att se projektet på github.</p>
+        <a className={"link-desktop"} href={props.linktogit}>
+          <GitHubIcon sx={{ fontSize: 30, color: "#4e85ee" }}></GitHubIcon>
         </a>
       </div>
-      {props.img ? (
-        <div className={"container-projects-row"}>
-          <IconButton
-            onClick={handleClickBack}
-            style={{ textDecoration: "none" }}
-            disableRipple={true}
-          >
-            <ArrowBackIosIcon></ArrowBackIosIcon>
-          </IconButton>
-          <img src={image} alt="project" className={"img-tabletmobile"} />
-          <img src={image} alt="project" className={"img-desktop"} />
 
-          <IconButton
-            onClick={handleClickForward}
-            style={{ textDecoration: "none" }}
-            disableRipple={true}
-          >
-            <ArrowForwardIosIcon></ArrowForwardIosIcon>
-          </IconButton>
-        </div>
-      ) : (
-        <p>Inga bilder</p>
-      )}
+      <div className={"container-projects-row"}>
+        <IconButton
+          onClick={handleClickBack}
+          style={{ textDecoration: "none", color: "#4e85ee" }}
+          disableRipple={true}
+        >
+          <ArrowBackIosIcon></ArrowBackIosIcon>
+        </IconButton>
+
+        <img src={image} alt="project" className={"img-project"} />
+
+        <IconButton
+          onClick={handleClickForward}
+          style={{ textDecoration: "none", color: "#4e85ee" }}
+          disableRipple={true}
+        >
+          <ArrowForwardIosIcon></ArrowForwardIosIcon>
+        </IconButton>
+      </div>
     </Box>
   );
 };
