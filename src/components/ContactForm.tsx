@@ -4,20 +4,23 @@ import "../style/style.css";
 import "../style/tablet.css";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
+import CircularProgress from "@mui/material/CircularProgress";
 
 const ContactForm = () => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState<boolean>(false);
 
   const sendEmail = (e: { preventDefault: () => void }) => {
+    setLoading(true);
     e.preventDefault();
+
     const emailmessage = {
       name: name,
       email: email,
       message: message,
     };
-    console.log("test");
 
     emailjs
       .send(
@@ -26,19 +29,28 @@ const ContactForm = () => {
         emailmessage,
         "5KAAPu8vXIV-IniE2"
       )
+      .then(() => setLoading(false))
       .then(
         (result) => {
           // show the user a success message
-          alert(result.text);
+
+          alert("Ditt meddelande är nu skickat!");
         },
         (error) => {
           // show the user an error
-          alert(error);
+          alert("Någonting gick fel. Försök igen!");
         }
       );
   };
   return (
-    <form onSubmit={sendEmail} className={"form-container"}>
+    <form
+      onSubmit={(e) => {
+        e.currentTarget.reset();
+        sendEmail(e);
+      }}
+      className={"form-container"}
+    >
+      {loading ? <CircularProgress /> : <p></p>}
       <TextField
         required
         id="outlined-basic"
