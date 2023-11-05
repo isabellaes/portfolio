@@ -3,6 +3,8 @@ import Exarbete2 from "../assets/moodtracker.png";
 import Exarbete3 from "../assets/meditation.png";
 import Exarbete4 from "../assets/Kommaihåg.png";
 import Exarbete5 from "../assets/dagbok.png";
+import solarisimg1 from "../assets/Skärmbild 2023-11-02 124709.png";
+import solarisimg2 from "../assets/Skärmbild 2023-11-02 124733.png";
 import bloggImg from "../assets/Skärmbild 2023-10-05 195010.png";
 
 export interface project {
@@ -24,6 +26,12 @@ export const projects: project[] = [
     description: "App byggd med React native och Expo. Backend - C#.Net",
     linktogit: "https://github.com/isabellaes/Never-alone",
     img: [Exarbete, Exarbete2, Exarbete3, Exarbete4, Exarbete5],
+  },
+  {
+    title: "Solaris",
+    description: "Enkel hemsida med vanilla javascript, html och css.",
+    linktogit: "https://github.com/isabellaes/individuell-examination-solaris",
+    img: [solarisimg1, solarisimg2],
   },
 ];
 

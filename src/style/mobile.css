@@ -7,7 +7,7 @@
 
   .flex-row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   body {
     background-color: #00030c;
@@ -82,7 +82,7 @@
   }
 
   .img-project {
-    width: 50%;
+    width: 60%;
     border: 1px solid black;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -259,39 +259,26 @@
     background-color: #00030c;
     box-sizing: border-box;
   }
-}
 
-/* 
-
-  .mobile-navbar {
-    display: inline-block;
-    position: relative;
-  }
-  .menu-icon {
-    margin-left: 0.5em;
-  }
-
-  .drop-down-menu {
-    display: block;
-    position: absolute;
+  /* TESTAR */
+  .card {
+    width: 15em;
+    height: 20em;
+    border-radius: 3em;
+    border: 2px solid #4e85ee;
+    margin: 2em;
+    padding: 2em;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    height: 12em;
-    width: fit-content;
-    padding: 1em;
-    justify-content: left;
-    background-color: rgb(103, 182, 251);
   }
-  .Link-drop-down {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    color: black;
-    font-weight: 600;
-    text-align: left;
-    padding: 0.5em;
-    margin: 0;
-    z-index: 1;
-  }*/
 
-/* 
-  
-  */
+  .card .mobile {
+    display: none;
+  }
+
+  .module {
+    display: none;
+  }
+}

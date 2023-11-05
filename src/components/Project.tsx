@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import "../style/mobile.css";
 import "../style/style.css";
 import "../style/tablet.css";
@@ -7,7 +6,6 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import IconButton from "@mui/material/IconButton";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { project } from "../utils/data";
-import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Project = (props: project) => {
   const [image, setImage] = useState<string>();
@@ -39,15 +37,7 @@ const Project = (props: project) => {
     }
   }
   return (
-    <Box>
-      <div className={"container-project-column"}>
-        <h6>{props.title}</h6>
-        <p>Klicka på ikonen för att se projektet på github.</p>
-        <a className={"link-desktop"} href={props.linktogit}>
-          <GitHubIcon sx={{ fontSize: 30, color: "#4e85ee" }}></GitHubIcon>
-        </a>
-      </div>
-
+    <div className="projectmodule">
       <div className={"container-projects-row"}>
         <IconButton
           onClick={handleClickBack}
@@ -67,7 +57,8 @@ const Project = (props: project) => {
           <ArrowForwardIosIcon></ArrowForwardIosIcon>
         </IconButton>
       </div>
-    </Box>
+      <a href="#Project">Stäng</a>
+    </div>
   );
 };
 
