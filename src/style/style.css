@@ -251,4 +251,33 @@
     box-sizing: border-box;
     background-color: #00030c;
   }
+
+  /* TESTAR */
+  .card {
+    width: 15em;
+    height: 20em;
+    border-radius: 3em;
+    border: 2px solid #4e85ee;
+  }
+
+  .projectmodule {
+    width: fit-content;
+    height: fit-content;
+    background-color: #00030c;
+  }
+
+  .module {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    background-color: #39397e97;
+    opacity: 1;
+  }
+
+  .module:target {
+    visibility: visible;
+  }
 }

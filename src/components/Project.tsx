@@ -39,7 +39,7 @@ const Project = (props: project) => {
     }
   }
   return (
-    <Box>
+    <div className="projectmodule">
       <div className={"container-project-column"}>
         <h6>{props.title}</h6>
         <p>Klicka på ikonen för att se projektet på github.</p>
@@ -67,7 +67,8 @@ const Project = (props: project) => {
           <ArrowForwardIosIcon></ArrowForwardIosIcon>
         </IconButton>
       </div>
-    </Box>
+      <a href="#">Stäng modul</a>
+    </div>
   );
 };
 
