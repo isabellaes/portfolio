@@ -19,7 +19,7 @@
     justify-content: center;
     flex-direction: column;
     height: fit-content;
-    width: max-content 100vw;
+    max-width: 100vw;
     padding-top: 0;
     padding-bottom: 10em;
     box-sizing: border-box;
@@ -38,7 +38,7 @@
     flex-direction: column;
     height: fit-content;
     padding: 2em;
-    margin: 0rem;
+    margin: 0;
     background-color: #00030c;
     box-sizing: border-box;
   }
@@ -257,5 +257,59 @@
     margin-left: 1em;
     font-weight: 600;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /* TESTAR */
+  .card {
+    width: 15em;
+    height: 20em;
+    border-radius: 3em;
+    border: 2px solid #4e85ee;
+    margin: 2em;
+    padding: 2em;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .card a {
+    margin: 0.5em;
+  }
+
+  .projectmodule {
+    width: fit-content;
+    height: 100%;
+    background-color: #00030c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    padding: 1em;
+  }
+
+  .projectmodule a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+  }
+
+  .module {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    background-color: #00000be0;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .module:target {
+    visibility: visible;
   }
 }
