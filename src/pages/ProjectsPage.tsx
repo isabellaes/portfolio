@@ -7,7 +7,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 const ProjectsPage = () => {
   return (
     <div id="Project" className="main-container">
-      <p className={"bold-text"}>Mina projekt</p>
+      <p className={"bold-text"}>
+        Mina <span className="color-blue">projekt</span>
+      </p>
       <div className="flex-row">
         {projects.flatMap((project) => (
           <div className="card">

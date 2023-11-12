@@ -8,31 +8,39 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const AboutPage = () => {
   return (
     <section id="About" className="main-container">
-      <h1 className={"bold-text"}>Om mig</h1>
+      <h1 className={"bold-text"}>
+        Om <span className="color-blue">mig</span>
+      </h1>
       <section className="box-column-50">
         <section>
           <img src={image} className="img-portrait" alt="portrait"></img>
+          <h6>Isabella Ekdahl Sahlberg</h6>
+          <p>31 år, Borås</p>
+          <h6> Vad är det som driver mig? </h6>
+          <p>
+            Jag är en person som alltid tyckt om problemlösning och mår som bäst
+            när jag får använda min analytiska förmåga till att lösa svåra
+            uppgifter och komplex logik. När jag programmerar stöter jag på just
+            den typ av utmaningar som motiverar mig. Jag får också utmana min
+            kreativa sida, genom att pussla ihop alla dessa olika delar till en
+            helhet – En fullt utvecklad produkt.
+          </p>
+          <h6>Vad intresserar mig?</h6>
+          <p>
+            Jag började med att lära mig backend. Det var både roligt och
+            utmanande. Under min utbildning till systemutvecklare, fick jag även
+            en inblick i frontend. Det väckte mitt intresse väldigt snabbt. Både
+            app- och webbutveckling var en av de roligaste delarna med
+            utbildningen. Det fick mig att, efter examen, söka mig in till
+            frontendutvecklare.
+          </p>
+          <h6>Mina mål </h6>
+          <p>
+            Jag vill jobba som fullstackutvecklare, med fokus på frontend. Det
+            viktigaste för mig är att hitta en arbetsplats där jag får lov att
+            växa och utvecklas, både professionellt och personligt.
+          </p>
 
-          <p>
-            Jag heter Isabella Ekdahl Sahlberg. Jag är 31 år och bor i Borås
-            tillsammans med min fru och våra två katter.
-          </p>
-          <p>
-            Tidigare har jag jobbat inom vård och omsorg, lokalvård samt butik.
-            Jag är utbildad systemutvecklare, tog examen våren 2023 och studerar
-            nu till frontendutvecklare React. Mitt intresse för programmering
-            började ganska tidigt när jag i ungdomen höll på en del med css och
-            html. Har alltid velat lära mig att bygga hemsidor men det tog några
-            år innan jag sökte mig in till programmering. Jag har alltid tyckt
-            om problemlösning och matematik.
-          </p>
-          <p>
-            Jag började studera till systemutvecklare hösten 2021 och läste då
-            mestadels C# och .Net. Det bästa med programmeringen är att lösa
-            problem och att få skapa nya saker. Jag tycker också om att lära mig
-            nya saker och det är något jag alltid får utforska inom
-            programmering.
-          </p>
           <a
             className={"link-desktop"}
             href="https://www.linkedin.com/in/isabella-ekdahl-sahlberg-a99828220/"

@@ -8,7 +8,9 @@ import { skills } from "../utils/data";
 const SkillsPage = () => {
   return (
     <section id="Skills" className="main-container">
-      <h1 className={"bold-text"}>Erfarenheter</h1>
+      <h1 className={"bold-text"}>
+        Mina <span className="color-blue">Erfarenheter</span>
+      </h1>
 
       <section className="box-column-50">
         <section>
@@ -24,9 +26,8 @@ const SkillsPage = () => {
             {skills.map((x) => (
               <Chip
                 label={x}
-                variant="filled"
-                color="info"
-                sx={{ marginInline: "1em" }}
+                variant="outlined"
+                sx={{ marginInline: "0.5em", color: "rgb(236, 228, 228)" }}
               ></Chip>
             ))}
           </Stack>
