@@ -155,7 +155,7 @@
     font-family: "Montserrat", sans-serif;
     align-items: center;
     width: fit-content;
-    padding: 3em;
+    padding: 1em 3em 1em 3em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: rgb(255, 255, 255);
     border-radius: 3em;
@@ -165,8 +165,44 @@
     width: fit-content;
   }
 
-  .TextField {
+  input {
     width: 15em;
+    height: 3em;
+    border: hsl(231, 7%, 60%) solid 1px;
+    font-family: "Montserrat", sans-serif;
+    color: #00030c;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 3px;
+  }
+  label p {
+    width: 15em;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    color: #00030c;
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+
+  textarea {
+    width: 15em;
+    height: 10em;
+    border: hsl(231, 7%, 60%) solid 1px;
+    font-family: "Montserrat", sans-serif;
+    color: #00030c;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 3px;
+  }
+
+  input:valid {
+    background-color: hsl(0, 0%, 100%);
+  }
+  input:user-invalid {
+    background-color: hsla(4, 100%, 67%, 0.237);
+    border: hsl(4, 100%, 67%) solid 1px;
   }
   .contact-button-2 {
     border: none;

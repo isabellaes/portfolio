@@ -1,4 +1,3 @@
-import TextField from "@mui/material/TextField";
 import "../style/mobile.css";
 import "../style/style.css";
 import "../style/tablet.css";
@@ -13,9 +12,8 @@ const ContactForm = () => {
   const [loading, setLoading] = useState<boolean>(false);
 
   const sendEmail = (e: { preventDefault: () => void }) => {
-    setLoading(true);
     e.preventDefault();
-
+    setLoading(true);
     const emailmessage = {
       name: name,
       email: email,
@@ -51,36 +49,39 @@ const ContactForm = () => {
       className={"form-container"}
     >
       {loading ? <CircularProgress /> : <p></p>}
-      <TextField
+      <label htmlFor="name">
+        <p>Namn</p>
+      </label>
+      <input
+        id="name"
+        type="text"
+        placeholder="Namn"
+        onChange={(e) => setName(e.currentTarget.value)}
         required
-        id="outlined-basic"
-        label="Namn"
-        variant="filled"
-        style={{ marginBottom: "1em" }}
-        className={"TextField"}
-        onChange={(e) => setName(e.target.value)}
       />
-      <TextField
+      <label htmlFor="email">
+        <p>Email</p>
+      </label>
+      <input
+        id="email"
+        type="email"
+        placeholder="Email"
+        onChange={(e) => setEmail(e.currentTarget.value)}
         required
-        id="outlined-basic"
-        variant="filled"
-        label="E-post"
-        style={{ marginBottom: "1em" }}
-        className={"TextField"}
-        onChange={(e) => setEmail(e.target.value)}
       />
-      <TextField
+      <label htmlFor="message">
+        <p>Meddelande</p>
+      </label>
+      <textarea
+        id="message"
+        placeholder="Meddelande"
+        onChange={(e) => setMessage(e.currentTarget.value)}
         required
-        id="outlined-multiline-static"
-        variant="filled"
-        label="Meddelande"
-        multiline
-        rows={4}
-        style={{ marginBottom: "1em" }}
-        className={"TextField"}
-        onChange={(e) => setMessage(e.target.value)}
       />
-      <button className="contact-button-2">Skicka</button>
+
+      <button type="submit" className="contact-button-2">
+        Skicka
+      </button>
     </form>
   );
 };
