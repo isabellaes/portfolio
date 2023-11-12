@@ -29,7 +29,7 @@ export const projects: project[] = [
   },
   {
     title: "Solaris",
-    description: "Enkel hemsida med vanilla javascript, html och css.",
+    description: "En enkel hemsida byggd med vanilla javascript, html och css.",
     linktogit: "https://github.com/isabellaes/individuell-examination-solaris",
     img: [solarisimg1, solarisimg2],
   },

@@ -17,6 +17,7 @@ const HomePage = () => {
             <span className="color-blue"> Isabella.</span>
           </h1>
           <p>Frontendutvecklare, React - student</p>
+          <p>Systemutvecklare .Net</p>
 
           <Link to="Contact" className="contact-button">
             Kontakta mig
