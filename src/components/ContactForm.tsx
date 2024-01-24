@@ -11,10 +11,16 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState<boolean>(false);
+  const [errors, setErrors] = useState<string>("");
+
+  const validateEmail = (email: string) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
 
   const sendEmail = (e: { preventDefault: () => void }) => {
-    setLoading(true);
     e.preventDefault();
+    setLoading(true);
 
     const emailmessage = {
       name: name,
@@ -33,7 +39,6 @@ const ContactForm = () => {
       .then(
         (result) => {
           // show the user a success message
-
           alert("Ditt meddelande är nu skickat!");
         },
         (error) => {
@@ -45,8 +50,15 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={(e) => {
-        e.currentTarget.reset();
-        sendEmail(e);
+        e.preventDefault();
+        if (validateEmail(email) != true) {
+          setErrors("Format: email@mail.se");
+        }
+        if (validateEmail(email)) {
+          setErrors("");
+          sendEmail(e);
+          e.currentTarget.reset();
+        }
       }}
       className={"form-container"}
     >
@@ -60,6 +72,7 @@ const ContactForm = () => {
         className={"TextField"}
         onChange={(e) => setName(e.target.value)}
       />
+
       <TextField
         required
         id="outlined-basic"
@@ -69,6 +82,7 @@ const ContactForm = () => {
         className={"TextField"}
         onChange={(e) => setEmail(e.target.value)}
       />
+      {errors && <p style={{ color: "red" }}>{errors}</p>}
       <TextField
         required
         id="outlined-multiline-static"
@@ -80,6 +94,7 @@ const ContactForm = () => {
         className={"TextField"}
         onChange={(e) => setMessage(e.target.value)}
       />
+
       <button className="contact-button-2">Skicka</button>
     </form>
   );
