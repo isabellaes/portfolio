@@ -15,7 +15,7 @@ const AboutPage = () => {
         <section>
           <img src={image} className="img-portrait" alt="portrait"></img>
           <h6>Isabella Ekdahl Sahlberg</h6>
-          <p>31 år, Borås</p>
+          <p>32 år, Borås</p>
           <h6> Vad är det som driver mig? </h6>
           <p>
             Jag är en person som alltid tyckt om problemlösning och mår som bäst
@@ -23,7 +23,7 @@ const AboutPage = () => {
             uppgifter och komplex logik. När jag programmerar stöter jag på just
             den typ av utmaningar som motiverar mig. Jag får också utmana min
             kreativa sida, genom att pussla ihop alla dessa olika delar till en
-            helhet – En fullt utvecklad produkt.
+            helhet.
           </p>
           <h6>Vad intresserar mig?</h6>
           <p>
