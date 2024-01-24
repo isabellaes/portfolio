@@ -51,7 +51,7 @@ const ContactForm = () => {
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        if (validateEmail(email) != true) {
+        if (validateEmail(email) !== true) {
           setErrors("Format: email@mail.se");
         }
         if (validateEmail(email)) {
