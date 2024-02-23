@@ -1,6 +1,3 @@
-import "../style/style.css";
-import "../style/mobile.css";
-import "../style/tablet.css";
 import Stack from "@mui/material/Stack";
 import Chip from "@mui/material/Chip";
 import { skills } from "../utils/data";

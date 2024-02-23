@@ -1,6 +1,3 @@
-import "../style/mobile.css";
-import "../style/style.css";
-import "../style/tablet.css";
 import { useEffect, useState } from "react";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import IconButton from "@mui/material/IconButton";

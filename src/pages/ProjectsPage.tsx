@@ -1,6 +1,3 @@
-import "../style/style.css";
-import "../style/mobile.css";
-import "../style/tablet.css";
 import { projects } from "../utils/data";
 import Project from "../components/Project";
 import GitHubIcon from "@mui/icons-material/GitHub";

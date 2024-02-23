@@ -1,11 +1,4 @@
-import "../style/style.css";
-import "../style/mobile.css";
-import "../style/tablet.css";
-import { Link } from "react-scroll";
-import AboutPage from "./AboutPage";
-import ProjectsPage from "./ProjectsPage";
-import ContactPage from "./ContactPage";
-import SkillsPage from "./SkillsPage";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -24,10 +17,6 @@ const HomePage = () => {
           </Link>
         </section>
       </section>
-      <AboutPage></AboutPage>
-      <SkillsPage></SkillsPage>
-      <ProjectsPage></ProjectsPage>
-      <ContactPage></ContactPage>
     </section>
   );
 };

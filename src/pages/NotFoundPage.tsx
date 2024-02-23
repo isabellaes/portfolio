@@ -1,5 +1,3 @@
-import "../style/style.css";
-
 const PageNotFound = () => {
   return (
     <div className="main-container">

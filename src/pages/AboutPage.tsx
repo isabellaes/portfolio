@@ -1,6 +1,3 @@
-import "../style/style.css";
-import "../style/mobile.css";
-import "../style/tablet.css";
 import image from "../assets/profilbild.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";

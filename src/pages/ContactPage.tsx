@@ -1,7 +1,4 @@
-import "../style/style.css";
 import ContactForm from "../components/ContactForm";
-import "../style/mobile.css";
-import "../style/tablet.css";
 
 const ContactPage = () => {
   return (

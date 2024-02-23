@@ -1,7 +1,4 @@
 import TextField from "@mui/material/TextField";
-import "../style/mobile.css";
-import "../style/style.css";
-import "../style/tablet.css";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import CircularProgress from "@mui/material/CircularProgress";
