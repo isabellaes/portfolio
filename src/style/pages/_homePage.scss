@@ -1,0 +1,55 @@
+.container-home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: max-content 100vw;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient($background-color-dark, $background-color-light);
+
+  .content-home {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    width: 100%;
+    box-sizing: border-box;
+    flex-grow: 1;
+    h1 {
+      font-size: 4em;
+      margin-top: 2.2em;
+      margin-bottom: 1em;
+      font-family: $font-heading;
+      color: $font-color;
+      font-weight: 800;
+      padding-left: 5%;
+    }
+    p {
+      font-size: 1.2em;
+      font-family: $font-regular;
+      color: $font-color;
+      margin: 0;
+      padding-left: 5%;
+    }
+
+    .contact-button {
+      border: none;
+      border-radius: 1.5em;
+      color: $font-color-light;
+      padding: 0.8em;
+      margin-left: 5%;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      transition-duration: 0.4s;
+      font-size: 1em;
+      cursor: pointer;
+      width: 8em;
+      font-family: $font-regular;
+      background-color: $btn-color-Dark;
+      margin-top: 1.2em;
+      font-weight: 600;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+}

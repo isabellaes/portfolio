@@ -1,0 +1,38 @@
+.main-row {
+  display: flex;
+  flex-direction: row;
+  background-color: $btn-color-Dark;
+  position: sticky;
+
+  .Link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    color: $font-color-light;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .Nav-Bar-Box-right {
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    padding-right: 10%;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+  }
+  .Nav-Bar-Box-left {
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    align-items: center;
+    justify-content: left;
+    width: 50%;
+  }
+
+  .mobile-navbar {
+    display: none;
+  }
+}

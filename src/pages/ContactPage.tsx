@@ -2,12 +2,12 @@ import ContactForm from "../components/ContactForm";
 
 const ContactPage = () => {
   return (
-    <section id="Contact" className="main-container">
-      <p className={"bold-text"}>
-        <span className="color-blue">Kontakta </span>mig
-      </p>
+    <main className="container-contact">
+      <h1>
+        <span className="color-purple">Kontakta </span>mig
+      </h1>
       <ContactForm></ContactForm>
-    </section>
+    </main>
   );
 };
 

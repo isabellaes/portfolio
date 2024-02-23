@@ -1,0 +1,62 @@
+.container-projectpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 100vw;
+  background-color: $background-color-light;
+
+  h1 {
+    font-weight: 400;
+    font-family: $font-heading;
+    color: $font-color;
+  }
+
+  p,
+  h3 {
+    font-family: $font-regular;
+    color: $font-color;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    .card {
+      width: 15em;
+      height: 20em;
+      border-radius: 3em;
+      border: 2px solid $btn-color-Dark;
+      margin: 2em;
+      padding: 2em;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .card a {
+      margin: 0.5em;
+    }
+  }
+
+  .module {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    background-color: #00000be0;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .module:target {
+    visibility: visible;
+  }
+}

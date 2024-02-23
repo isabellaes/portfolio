@@ -15,28 +15,30 @@ const NavBar = () => {
 
   return (
     <Box sx={{ flexGrow: 1, position: "fixed", width: "100vw" }}>
-      <div className="main-row-100-black">
+      <div className="main-row">
         <div className="Nav-Bar-Box-left">
-          <p className={"Link color-blue"}>Isabella</p>
+          <p className={"Link color-purple"}>Isabella</p>
         </div>
         <div className="Nav-Bar-Box-right">
-          <Link to="/" className="Link">
+          <Link to="/" className="Link" style={{ textDecoration: "none" }}>
             Hem
           </Link>
-          <p className="Link-p">|</p>
-          <Link to="About" className="Link">
+          <Link to="About" className="Link" style={{ textDecoration: "none" }}>
             Om
           </Link>
-          <p className="Link-p">|</p>
-          <Link to="Skills" className="Link">
-            Erfarenheter
-          </Link>
-          <p className="Link-p">|</p>
-          <Link to="Projects" className="Link">
+
+          <Link
+            to="Projects"
+            className="Link"
+            style={{ textDecoration: "none" }}
+          >
             Projekt
           </Link>
-          <p className="Link-p">|</p>
-          <Link to="Contact" className="Link">
+          <Link
+            to="Contact"
+            className="Link"
+            style={{ textDecoration: "none" }}
+          >
             Kontakt
           </Link>
 

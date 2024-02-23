@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 2em;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: $background-color-light;
+  p {
+    color: $font-color;
+    font-family: $font-regular;
+  }
+}

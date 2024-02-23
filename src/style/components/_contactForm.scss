@@ -1,0 +1,37 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  width: fit-content;
+  padding: 3em;
+  /*  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  background-color: $background-color-light;
+
+  .submit-button {
+    width: fit-content;
+  }
+
+  .TextField {
+    width: 15em;
+  }
+  .contact-button-2 {
+    border: none;
+    border-radius: 1.5em;
+    color: $font-color-light;
+    padding: 0.8em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    font-size: 1em;
+    cursor: pointer;
+    width: 8em;
+    font-family: "Montserrat", sans-serif;
+    background-color: $btn-color-Dark;
+    box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.2), 0 6px 20px 0 rgba(9, 9, 9, 0.19);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 600;
+  }
+}

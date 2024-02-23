@@ -1,0 +1,38 @@
+.projectmodule {
+  width: fit-content;
+  height: 100%;
+  background-color: #00030c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+  padding: 1em;
+
+  .container-projects-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-project-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-project {
+    width: 60%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+  }
+}

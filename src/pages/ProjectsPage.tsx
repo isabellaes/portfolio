@@ -3,17 +3,17 @@ import Project from "../components/Project";
 import GitHubIcon from "@mui/icons-material/GitHub";
 const ProjectsPage = () => {
   return (
-    <div id="Project" className="main-container">
-      <p className={"bold-text"}>
-        Mina <span className="color-blue">projekt</span>
-      </p>
+    <div id="Project" className="container-projectpage">
+      <h1>
+        Mina <span className="color-purple">projekt</span>
+      </h1>
       <div className="flex-row">
         {projects.flatMap((project) => (
-          <div className="card">
-            <h6>{project.title}</h6>
+          <div className="card" key={project.title}>
+            <h3>{project.title}</h3>
             <p>{project.description}</p>
             <a className={"link-desktop"} href={project.linktogit}>
-              <GitHubIcon sx={{ fontSize: 30, color: "#4e85ee" }}></GitHubIcon>
+              <GitHubIcon sx={{ fontSize: 30, color: "#4e3071" }}></GitHubIcon>
             </a>
             <a className="mobile" href={`#${project.title}`}>
               Bilder
@@ -23,7 +23,7 @@ const ProjectsPage = () => {
       </div>
 
       {projects.flatMap((project) => (
-        <div id={project.title} className="module">
+        <div id={project.title} className="module" key={project.title}>
           <Project
             title={project.title}
             description={project.description}
