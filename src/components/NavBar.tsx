@@ -46,7 +46,7 @@ const NavBar = () => {
             <IconButton aria-label="menu" onClick={handleOnClick}>
               <MenuIcon
                 className="menu-icon"
-                sx={{ fontSize: "1.2em" }}
+                sx={{ fontSize: "1.2em", color: "#fff" }}
               ></MenuIcon>
             </IconButton>
           </div>
