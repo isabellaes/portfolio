@@ -44,16 +44,13 @@ const AboutPage = () => {
 
             <a
               className={"link-desktop"}
-              href="https://www.linkedin.com/in/isabella-ekdahl-sahlberg-a99828220/"
+              href="https://www.linkedin.com/in/isabellaes"
             >
               <LinkedInIcon
                 sx={{ fontSize: 30, color: "#4e3071" }}
               ></LinkedInIcon>
             </a>
-            <a
-              className={"link-desktop"}
-              href=" https://github.com/isabellaes?tab=repositories"
-            >
+            <a className={"link-desktop"} href=" https://github.com/isabellaes">
               <GitHubIcon sx={{ fontSize: 30, color: "#4e3071" }}></GitHubIcon>
             </a>
           </div>
