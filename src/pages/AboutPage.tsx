@@ -43,7 +43,7 @@ const AboutPage = () => {
 
           <a
             className={"link-desktop"}
-            href="https://www.linkedin.com/in/isabella-ekdahl-sahlberg-a99828220/"
+            href="https://www.linkedin.com/in/isabellaes/"
           >
             <LinkedInIcon
               sx={{ fontSize: 30, color: "#4e85ee" }}
