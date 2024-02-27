@@ -14,10 +14,10 @@ const NavBar = () => {
   }
 
   return (
-    <Box sx={{ flexGrow: 1, position: "fixed", width: "100vw" }}>
+    <header>
       <div className="main-row">
         <div className="Nav-Bar-Box-left">
-          <p className={"Link color-purple"}>Isabella</p>
+          <p className={"Link color-purple"}>Frontendutvecklare, Isabella ES</p>
         </div>
         <div className="Nav-Bar-Box-right">
           <Link to="/" className="Link" style={{ textDecoration: "none" }}>
@@ -96,7 +96,7 @@ const NavBar = () => {
       ) : (
         <p></p>
       )}
-    </Box>
+    </header>
   );
 };
 

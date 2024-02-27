@@ -5,19 +5,25 @@
   width: max-content 100vw;
   justify-content: center;
   align-items: center;
-  background: linear-gradient($background-color-dark, $background-color-light);
+  background: linear-gradient($background-color-light, #fff);
 
   .content-home {
     display: flex;
     flex-direction: column;
     padding: 10%;
+    margin-top: 4em;
     width: 100%;
     box-sizing: border-box;
     flex-grow: 1;
+
+    img {
+      position: absolute;
+      max-width: 500px;
+      right: 15em;
+      top: 5em;
+    }
     h1 {
       font-size: 4em;
-      margin-top: 2.2em;
-      margin-bottom: 1em;
       font-family: $font-heading;
       color: $font-color;
       font-weight: 800;
@@ -34,7 +40,7 @@
     .contact-button {
       border: none;
       border-radius: 1.5em;
-      color: $font-color-light;
+      color: #fff;
       padding: 0.8em;
       margin-left: 5%;
       text-align: center;
@@ -43,13 +49,17 @@
       transition-duration: 0.4s;
       font-size: 1em;
       cursor: pointer;
-      width: 8em;
+      width: 9em;
       font-family: $font-regular;
-      background-color: $btn-color-Dark;
-      margin-top: 1.2em;
+      margin-top: 2em;
       font-weight: 600;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-color: #4a0e56;
+    }
+
+    .contact-button:hover {
+      background-color: #711883;
     }
   }
 }
