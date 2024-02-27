@@ -4,8 +4,8 @@
   align-items: center;
   min-height: 100vh;
   max-width: 100vw;
-  background-color: #fff;
-  padding-top: 2em;
+  background: linear-gradient($background-color-light, #fff);
+  padding-top: 4em;
 
   h1 {
     font-weight: 400;
@@ -17,20 +17,44 @@
     display: flex;
     flex-direction: row;
     margin-top: 1em;
+    overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1em;
   }
 
   .con {
     height: 30em;
-    width: 8em;
-    padding-top: 2em;
+    width: 15em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #36023f;
+    justify-content: space-between;
+    overflow: hidden;
 
-    a {
-      color: #fff;
+    img {
+      height: 30em;
+      max-width: 15em;
+      position: absolute;
+    }
+
+    .info {
+      padding: 1em;
+      text-align: center;
+      position: relative;
+
+      p {
+        color: $btn-color-Dark;
+      }
+    }
+
+    .icons {
+      padding: 1em;
+      position: relative;
+    }
+
+    a,
+    h1 {
+      color: $btn-color-Dark;
       padding: 10px;
     }
   }

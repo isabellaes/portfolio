@@ -1,7 +1,7 @@
 .container-home {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   width: max-content 100vw;
   justify-content: center;
   align-items: center;
@@ -61,5 +61,13 @@
     .contact-button:hover {
       background-color: #711883;
     }
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 5em;
+    width: 100%;
+    background-color: #711883;
   }
 }

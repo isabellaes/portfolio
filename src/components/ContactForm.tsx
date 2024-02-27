@@ -64,11 +64,11 @@ const ContactForm = () => {
         required
         id="outlined-basic"
         label="Namn"
-        variant="filled"
         style={{
           marginBottom: "1em",
-          backgroundColor: "#fff",
+
           border: "1px solid black",
+          borderRadius: "3px",
         }}
         className={"TextField"}
         onChange={(e: { target: { value: SetStateAction<string> } }) =>
@@ -79,12 +79,12 @@ const ContactForm = () => {
       <TextField
         required
         id="outlined-basic"
-        variant="filled"
         label="E-post"
         style={{
           marginBottom: "1em",
-          backgroundColor: "#fff",
+
           border: "1px solid black",
+          borderRadius: "3px",
         }}
         className={"TextField"}
         onChange={(e: { target: { value: SetStateAction<string> } }) =>
@@ -95,14 +95,13 @@ const ContactForm = () => {
       <TextField
         required
         id="outlined-multiline-static"
-        variant="filled"
         label="Meddelande"
         multiline
         rows={4}
         style={{
           marginBottom: "1em",
-          backgroundColor: "#fff",
           border: "1px solid black",
+          borderRadius: "3px",
         }}
         className={"TextField"}
         onChange={(e: { target: { value: SetStateAction<string> } }) =>
