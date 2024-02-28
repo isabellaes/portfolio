@@ -18,21 +18,21 @@
 
     img {
       position: absolute;
-      max-width: 500px;
+      max-width: 800px;
       right: 15em;
-      top: 5em;
+      top: 10em;
     }
     h1 {
       font-size: 4em;
       font-family: $font-heading;
-      color: $font-color;
+      color: $btn-color-Dark;
       font-weight: 800;
       padding-left: 5%;
     }
     p {
       font-size: 1.2em;
       font-family: $font-regular;
-      color: $font-color;
+      color: $btn-color-Dark;
       margin: 0;
       padding-left: 5%;
     }

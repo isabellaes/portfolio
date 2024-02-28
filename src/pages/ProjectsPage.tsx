@@ -1,6 +1,5 @@
 import { projects } from "../utils/data";
 import Project from "../components/Project";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import cardImg from "../assets/project-card.png";
 const ProjectsPage = () => {
   return (
@@ -11,15 +10,13 @@ const ProjectsPage = () => {
       <div className="flex-row">
         {projects.flatMap((project) => (
           <div className="card" key={project.title}>
-            <img src={cardImg} alt="" />
             <h3>{project.title}</h3>
+            <img src={cardImg} alt="project" />
             <p>{project.description}</p>
-            <a className={"link-desktop"} href={project.linktogit}>
-              <GitHubIcon sx={{ fontSize: 30, color: "#4e3071" }}></GitHubIcon>
-            </a>
-            <a className="mobile" href={`#${project.title}`}>
-              Bilder
-            </a>
+            <div className="buttons">
+              <a href={project.linktogit}>Github</a>
+              <a href={`#${project.title}`}>Bilder</a>
+            </div>
           </div>
         ))}
       </div>

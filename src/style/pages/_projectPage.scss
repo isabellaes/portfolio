@@ -25,12 +25,12 @@
     display: flex;
     flex-direction: row;
     .card {
-      width: 15em;
-      height: 20em;
-      border-radius: 3em;
-      border: 2px solid $btn-color-Dark;
+      max-width: 19em;
+      height: fit-content;
       margin: 2em;
-
+      padding: 1em;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
       box-sizing: border-box;
       display: flex;
       align-items: center;
@@ -40,10 +40,40 @@
       img {
         max-height: 10em;
       }
-    }
 
-    .card a {
-      margin: 0.5em;
+      p,
+      h3 {
+        padding: 1em;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        padding-top: 1em;
+        a {
+          border: none;
+          border-radius: 2px;
+          color: $btn-color-Dark;
+          padding: 0.8em;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          transition-duration: 0.4s;
+          font-size: 1em;
+          cursor: pointer;
+          width: 8em;
+          font-family: "Montserrat", sans-serif;
+          border: 2px solid $btn-color-Dark;
+          margin-top: 1em;
+          margin-bottom: 1em;
+          font-weight: 600;
+        }
+        a:hover {
+          background-color: #e8bbf5;
+        }
+      }
     }
   }
 
