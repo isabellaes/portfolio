@@ -54,6 +54,7 @@ const AboutPage = () => {
               <GitHubIcon sx={{ fontSize: 30, color: "#4e3071" }}></GitHubIcon>
             </a>
           </div>
+
         </section>
       </section>
       <section className="box-column">
