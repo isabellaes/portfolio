@@ -95,3 +95,37 @@
     visibility: visible;
   }
 }
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .container-projectpage {
+    .flex-row {
+      .card {
+        margin: 1em;
+        max-width: 16em;
+        .buttons {
+          a {
+            width: 6em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .container-projectpage {
+    .flex-row {
+      display: flex;
+      flex-direction: column;
+      .card {
+        margin: 1em;
+        max-width: 16em;
+        .buttons {
+          a {
+            width: 6em;
+          }
+        }
+      }
+    }
+  }
+}

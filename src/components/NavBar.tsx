@@ -41,12 +41,11 @@ const NavBar = () => {
           >
             Kontakt
           </Link>
-
           <div className="mobile-navbar">
             <IconButton aria-label="menu" onClick={handleOnClick}>
               <MenuIcon
                 className="menu-icon"
-                sx={{ fontSize: "1.2em", color: "#fff" }}
+                sx={{ fontSize: "1.2em", color: "#000" }}
               ></MenuIcon>
             </IconButton>
           </div>
@@ -55,7 +54,7 @@ const NavBar = () => {
       {menu ? (
         <div className="drop-down-menu">
           <Link
-            to="Home"
+            to="/"
             style={{ textDecoration: "none" }}
             onClick={() => showMenu(false)}
           >
@@ -70,13 +69,6 @@ const NavBar = () => {
             <p className={"Link-drop-down"}>Om</p>
           </Link>
 
-          <Link
-            to="Skills"
-            style={{ textDecoration: "none" }}
-            onClick={() => showMenu(false)}
-          >
-            <p className={"Link-drop-down"}>Erfarenheter</p>
-          </Link>
           <Link
             to="Projects"
             style={{ textDecoration: "none" }}

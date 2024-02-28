@@ -58,3 +58,22 @@
     }
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .container-contact {
+    .contact-row {
+      display: flex;
+      flex-direction: column;
+      .con {
+        height: 12em;
+        width: max-content;
+
+        img {
+          height: 12em;
+          align-items: center;
+          max-width: max-content;
+        }
+      }
+    }
+  }
+}

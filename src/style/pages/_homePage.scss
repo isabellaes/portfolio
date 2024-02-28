@@ -9,21 +9,22 @@
 
   .content-home {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 10%;
-    margin-top: 4em;
     width: 100%;
-    box-sizing: border-box;
-    flex-grow: 1;
-
+    justify-content: space-around;
+    align-items: center;
+    div {
+      max-width: 60%;
+      margin: 1em;
+      padding: 1em;
+    }
     img {
-      position: absolute;
-      max-width: 800px;
-      right: 15em;
-      top: 10em;
+      float: left;
+      max-width: 40%;
     }
     h1 {
-      font-size: 4em;
+      font-size: 3em;
       font-family: $font-heading;
       color: $btn-color-Dark;
       font-weight: 800;
@@ -69,5 +70,44 @@
     min-height: 5em;
     width: 100%;
     background-color: #711883;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .container-home {
+    .content-home {
+      div {
+        max-width: 70%;
+        padding: 0;
+      }
+      img {
+        max-width: 30%;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container-home {
+    .content-home {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      img {
+        max-width: 200px;
+        padding-bottom: 1em;
+      }
+      div {
+        max-width: 100%;
+        padding: 0;
+      }
+      h1 {
+        font-size: 2em;
+      }
+    }
   }
 }
