@@ -1,34 +1,23 @@
-import "../style/style.css";
-import "../style/mobile.css";
-import "../style/tablet.css";
-import { Link } from "react-scroll";
-import AboutPage from "./AboutPage";
-import ProjectsPage from "./ProjectsPage";
-import ContactPage from "./ContactPage";
-import SkillsPage from "./SkillsPage";
+import { Link } from "react-router-dom";
+import image from "../assets/Namnlös-3.png";
 
 const HomePage = () => {
   return (
-    <section>
-      <section id="Home" className={"container-home"}>
-        <section className="content-home">
+    <main className={"container-home"}>
+      <section className="content-home">
+        <div>
+          <h1>FRONTENDUTVECKLARE</h1>
           <h1>
-            Hi, I'm
-            <span className="color-blue"> Isabella.</span>
+            <span className="color-purple">STUDENT</span>
           </h1>
-          <p>Frontendutvecklare, React - student</p>
-          <p>Systemutvecklare .Net</p>
-
+          <p>React - Javascript - Typescript - Sass</p>
           <Link to="Contact" className="contact-button">
             Kontakta mig
           </Link>
-        </section>
+        </div>
+        <img src={image} alt="avatar"></img>
       </section>
-      <AboutPage></AboutPage>
-      <SkillsPage></SkillsPage>
-      <ProjectsPage></ProjectsPage>
-      <ContactPage></ContactPage>
-    </section>
+    </main>
   );
 };
 

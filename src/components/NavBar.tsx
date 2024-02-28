@@ -1,10 +1,7 @@
-import { Box, IconButton } from "@mui/material";
-import "../style/mobile.css";
-import "../style/style.css";
-import "../style/tablet.css";
+import { IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useEffect, useState } from "react";
-import { Events, Link, scrollSpy } from "react-scroll";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [menu, showMenu] = useState<boolean>(false);
@@ -16,93 +13,39 @@ const NavBar = () => {
     }
   }
 
-  useEffect(() => {
-    // Registering the 'begin' event and logging it to the console when triggered.
-    Events.scrollEvent.register("begin", (to, element) => {
-      console.log("begin", to, element);
-    });
-
-    // Registering the 'end' event and logging it to the console when triggered.
-    Events.scrollEvent.register("end", (to, element) => {
-      console.log("end", to, element);
-    });
-
-    // Updating scrollSpy when the component mounts.
-    scrollSpy.update();
-
-    // Returning a cleanup function to remove the registered events when the component unmounts.
-    return () => {
-      Events.scrollEvent.remove("begin");
-      Events.scrollEvent.remove("end");
-    };
-  }, []);
-
-  const handleSetActive = (to: string) => {
-    console.log(to);
-  };
-
   return (
-    <Box sx={{ flexGrow: 1, position: "fixed", width: "100vw" }}>
-      <div className="main-row-100-black">
+    <header>
+      <div className="main-row">
         <div className="Nav-Bar-Box-left">
-          <p className={"Link color-blue"}>Isabella</p>
+          <p className={"Link color-purple"}>Frontendutvecklare, Isabella ES</p>
         </div>
         <div className="Nav-Bar-Box-right">
-          <Link
-            to="Home"
-            spy={true}
-            activeClass="active"
-            onSetActive={handleSetActive}
-            className="Link"
-          >
+          <Link to="/" className="Link" style={{ textDecoration: "none" }}>
             Hem
           </Link>
-          <p className="Link-p">|</p>
-          <Link
-            to="About"
-            className="Link"
-            spy={true}
-            activeClass="active"
-            onSetActive={handleSetActive}
-          >
+          <Link to="About" className="Link" style={{ textDecoration: "none" }}>
             Om
           </Link>
-          <p className="Link-p">|</p>
+
           <Link
-            to="Skills"
+            to="Projects"
             className="Link"
-            spy={true}
-            activeClass="active"
-            onSetActive={handleSetActive}
-          >
-            Erfarenheter
-          </Link>
-          <p className="Link-p">|</p>
-          <Link
-            to="Project"
-            className="Link"
-            spy={true}
-            activeClass="active"
-            onSetActive={handleSetActive}
+            style={{ textDecoration: "none" }}
           >
             Projekt
           </Link>
-          <p className="Link-p">|</p>
           <Link
             to="Contact"
             className="Link"
-            spy={true}
-            activeClass="active"
-            onSetActive={handleSetActive}
+            style={{ textDecoration: "none" }}
           >
             Kontakt
           </Link>
-
           <div className="mobile-navbar">
             <IconButton aria-label="menu" onClick={handleOnClick}>
               <MenuIcon
                 className="menu-icon"
-                sx={{ fontSize: "1.2em" }}
+                sx={{ fontSize: "1.2em", color: "#000" }}
               ></MenuIcon>
             </IconButton>
           </div>
@@ -111,7 +54,7 @@ const NavBar = () => {
       {menu ? (
         <div className="drop-down-menu">
           <Link
-            to="HOme"
+            to="/"
             style={{ textDecoration: "none" }}
             onClick={() => showMenu(false)}
           >
@@ -127,14 +70,7 @@ const NavBar = () => {
           </Link>
 
           <Link
-            to="Skills"
-            style={{ textDecoration: "none" }}
-            onClick={() => showMenu(false)}
-          >
-            <p className={"Link-drop-down"}>Erfarenheter</p>
-          </Link>
-          <Link
-            to="Project"
+            to="Projects"
             style={{ textDecoration: "none" }}
             onClick={() => showMenu(false)}
           >
@@ -152,7 +88,7 @@ const NavBar = () => {
       ) : (
         <p></p>
       )}
-    </Box>
+    </header>
   );
 };
 

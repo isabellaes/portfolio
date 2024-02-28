@@ -1,0 +1,113 @@
+.container-home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: max-content 100vw;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient($background-color-light, #fff);
+
+  .content-home {
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    div {
+      max-width: 60%;
+      margin: 1em;
+      padding: 1em;
+    }
+    img {
+      float: left;
+      max-width: 40%;
+    }
+    h1 {
+      font-size: 3em;
+      font-family: $font-heading;
+      color: $btn-color-Dark;
+      font-weight: 800;
+      padding-left: 5%;
+    }
+    p {
+      font-size: 1.2em;
+      font-family: $font-regular;
+      color: $btn-color-Dark;
+      margin: 0;
+      padding-left: 5%;
+    }
+
+    .contact-button {
+      border: none;
+      border-radius: 1.5em;
+      color: #fff;
+      padding: 0.8em;
+      margin-left: 5%;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      transition-duration: 0.4s;
+      font-size: 1em;
+      cursor: pointer;
+      width: 9em;
+      font-family: $font-regular;
+      margin-top: 2em;
+      font-weight: 600;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-color: #4a0e56;
+    }
+
+    .contact-button:hover {
+      background-color: #711883;
+    }
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 5em;
+    width: 100%;
+    background-color: #711883;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .container-home {
+    .content-home {
+      div {
+        max-width: 70%;
+        padding: 0;
+      }
+      img {
+        max-width: 30%;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container-home {
+    .content-home {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      img {
+        max-width: 200px;
+        padding-bottom: 1em;
+      }
+      div {
+        max-width: 100%;
+        padding: 0;
+      }
+      h1 {
+        font-size: 2em;
+      }
+    }
+  }
+}

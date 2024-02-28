@@ -33,6 +33,12 @@ export const projects: project[] = [
     linktogit: "https://github.com/isabellaes/individuell-examination-solaris",
     img: [solarisimg1, solarisimg2],
   },
+  /*  {
+    title: "Webbshop",
+    description: "Kommer snart",
+    linktogit: "https://github.com/isabellaes/Webbshop",
+    img: [],
+  }, */
 ];
 
 export const skills = [

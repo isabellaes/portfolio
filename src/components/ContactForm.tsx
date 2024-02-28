@@ -1,9 +1,6 @@
 import TextField from "@mui/material/TextField";
-import "../style/mobile.css";
-import "../style/style.css";
-import "../style/tablet.css";
 import emailjs from "@emailjs/browser";
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 import CircularProgress from "@mui/material/CircularProgress";
 
 const ContactForm = () => {
@@ -37,11 +34,11 @@ const ContactForm = () => {
       )
       .then(() => setLoading(false))
       .then(
-        (result) => {
+        () => {
           // show the user a success message
           alert("Ditt meddelande är nu skickat!");
         },
-        (error) => {
+        () => {
           // show the user an error
           alert("Någonting gick fel. Försök igen!");
         }
@@ -67,32 +64,49 @@ const ContactForm = () => {
         required
         id="outlined-basic"
         label="Namn"
-        variant="filled"
-        style={{ marginBottom: "1em" }}
+        style={{
+          marginBottom: "1em",
+
+          border: "1px solid black",
+          borderRadius: "3px",
+        }}
         className={"TextField"}
-        onChange={(e) => setName(e.target.value)}
+        onChange={(e: { target: { value: SetStateAction<string> } }) =>
+          setName(e.target.value)
+        }
       />
 
       <TextField
         required
         id="outlined-basic"
-        variant="filled"
         label="E-post"
-        style={{ marginBottom: "1em" }}
+        style={{
+          marginBottom: "1em",
+
+          border: "1px solid black",
+          borderRadius: "3px",
+        }}
         className={"TextField"}
-        onChange={(e) => setEmail(e.target.value)}
+        onChange={(e: { target: { value: SetStateAction<string> } }) =>
+          setEmail(e.target.value)
+        }
       />
       {errors && <p style={{ color: "red" }}>{errors}</p>}
       <TextField
         required
         id="outlined-multiline-static"
-        variant="filled"
         label="Meddelande"
         multiline
         rows={4}
-        style={{ marginBottom: "1em" }}
+        style={{
+          marginBottom: "1em",
+          border: "1px solid black",
+          borderRadius: "3px",
+        }}
         className={"TextField"}
-        onChange={(e) => setMessage(e.target.value)}
+        onChange={(e: { target: { value: SetStateAction<string> } }) =>
+          setMessage(e.target.value)
+        }
       />
 
       <button className="contact-button-2">Skicka</button>

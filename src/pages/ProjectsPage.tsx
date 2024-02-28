@@ -1,32 +1,28 @@
-import "../style/style.css";
-import "../style/mobile.css";
-import "../style/tablet.css";
 import { projects } from "../utils/data";
 import Project from "../components/Project";
-import GitHubIcon from "@mui/icons-material/GitHub";
+import cardImg from "../assets/project-card.png";
 const ProjectsPage = () => {
   return (
-    <div id="Project" className="main-container">
-      <p className={"bold-text"}>
-        Mina <span className="color-blue">projekt</span>
-      </p>
+    <div id="Project" className="container-projectpage">
+      <h1>
+        Mina <span className="color-purple">projekt</span>
+      </h1>
       <div className="flex-row">
         {projects.flatMap((project) => (
-          <div className="card">
-            <h6>{project.title}</h6>
+          <div className="card" key={project.title}>
+            <h3>{project.title}</h3>
+            <img src={cardImg} alt="project" />
             <p>{project.description}</p>
-            <a className={"link-desktop"} href={project.linktogit}>
-              <GitHubIcon sx={{ fontSize: 30, color: "#4e85ee" }}></GitHubIcon>
-            </a>
-            <a className="mobile" href={`#${project.title}`}>
-              Bilder
-            </a>
+            <div className="buttons">
+              <a href={project.linktogit}>Github</a>
+              <a href={`#${project.title}`}>Bilder</a>
+            </div>
           </div>
         ))}
       </div>
 
       {projects.flatMap((project) => (
-        <div id={project.title} className="module">
+        <div id={project.title} className="module" key={project.title}>
           <Project
             title={project.title}
             description={project.description}
