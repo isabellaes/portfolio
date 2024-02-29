@@ -17,7 +17,7 @@ const NavBar = () => {
     <header>
       <div className="main-row">
         <div className="Nav-Bar-Box-left">
-          <p className={"Link color-purple"}>Frontendutvecklare, Isabella ES</p>
+          <p className={"Link color-purple"}>Isabella ES</p>
         </div>
         <div className="Nav-Bar-Box-right">
           <Link to="/" className="Link" style={{ textDecoration: "none" }}>
