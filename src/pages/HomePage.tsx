@@ -6,11 +6,11 @@ const HomePage = () => {
     <main className={"container-home"}>
       <section className="content-home">
         <div>
-          <h1>FRONTENDUTVECKLARE</h1>
+          <h1>FULLSTACKUTVECKLARE</h1>
           <h1>
             <span className="color-purple">STUDENT</span>
           </h1>
-          <p>React - Javascript - Typescript - Sass</p>
+          <p>React - Javascript - Typescript - .Net - C#</p>
           <Link to="Contact" className="contact-button">
             Kontakta mig
           </Link>

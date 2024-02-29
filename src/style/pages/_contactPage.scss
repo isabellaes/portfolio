@@ -77,3 +77,21 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .container-contact {
+    .contact-row {
+      display: flex;
+      flex-direction: column;
+      .con {
+        height: 12em;
+        width: max-content;
+        background-color: rgb(232, 186, 241);
+
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+}

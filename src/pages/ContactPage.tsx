@@ -19,10 +19,12 @@ const ContactPage = () => {
               className={"link-desktop"}
               href="https://www.linkedin.com/in/isabellaes"
             >
-              <LinkedInIcon sx={{ fontSize: 30, color: "#fff" }}></LinkedInIcon>
+              <LinkedInIcon
+                sx={{ fontSize: 30, color: "#320a41" }}
+              ></LinkedInIcon>
             </a>
             <a className={"link-desktop"} href=" https://github.com/isabellaes">
-              <GitHubIcon sx={{ fontSize: 30, color: "#fff" }}></GitHubIcon>
+              <GitHubIcon sx={{ fontSize: 30, color: "#320a41" }}></GitHubIcon>
             </a>
           </div>
         </div>
