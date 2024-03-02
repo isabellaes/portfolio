@@ -1,7 +1,6 @@
 import ContactForm from "./ContactForm";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import img from "../../assets/project-card.png";
 
 const ContactContainer = () => {
   return (
