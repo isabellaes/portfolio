@@ -1,13 +1,13 @@
-import image from "../assets/profilbild.jpg";
+import image from "../../assets/profilbild.jpg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Stack from "@mui/material/Stack";
 import Chip from "@mui/material/Chip";
-import { skills } from "../utils/data";
+import { skills } from "../../utils/data";
 
-const AboutPage = () => {
+const AboutContainer = () => {
   return (
-    <div className="container-about">
+    <div id="About" className="container-about">
       <h1>
         Om <span className="color-purple">mig</span>
       </h1>
@@ -54,7 +54,6 @@ const AboutPage = () => {
               <GitHubIcon sx={{ fontSize: 30, color: "#4e3071" }}></GitHubIcon>
             </a>
           </div>
-
         </section>
       </section>
       <section className="box-column">
@@ -83,4 +82,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default AboutContainer;

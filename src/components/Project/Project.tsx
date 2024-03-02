@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import IconButton from "@mui/material/IconButton";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import { project } from "../utils/data";
+import { project } from "../../utils/data";
 
 const Project = (props: project) => {
   const [image, setImage] = useState<string>();

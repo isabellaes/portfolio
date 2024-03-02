@@ -1,14 +1,14 @@
-import ContactForm from "../components/ContactForm";
+import ContactForm from "./ContactForm";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import img from "../assets/project-card.png";
+import img from "../../assets/project-card.png";
 
-const ContactPage = () => {
+const ContactContainer = () => {
   return (
-    <main className="container-contact">
+    <main id="Contact" className="container-contact">
       <div className="contact-row">
         <div className="con">
-          <img src={img} alt="" />
+          {/*  <img src={img} alt="" /> */}
           <div className="info">
             <h1>Kontakta mig</h1>
             <p>Fyll i formuläret eller kontakta mig på LinkedIn</p>
@@ -34,4 +34,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default ContactContainer;

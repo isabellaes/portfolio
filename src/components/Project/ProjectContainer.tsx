@@ -1,7 +1,8 @@
-import { projects } from "../utils/data";
-import Project from "../components/Project";
-import cardImg from "../assets/project-card.png";
-const ProjectsPage = () => {
+import { projects } from "../../utils/data";
+import Project from "./Project";
+import cardImg from "../../assets/project-image.png";
+
+const ProjectsContainer = () => {
   return (
     <div id="Project" className="container-projectpage">
       <h1>
@@ -35,4 +36,4 @@ const ProjectsPage = () => {
   );
 };
 
-export default ProjectsPage;
+export default ProjectsContainer;

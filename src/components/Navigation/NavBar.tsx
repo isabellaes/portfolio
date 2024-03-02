@@ -1,16 +1,12 @@
 import { IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 const NavBar = () => {
   const [menu, showMenu] = useState<boolean>(false);
   function handleOnClick() {
-    if (menu === false) {
-      showMenu(true);
-    } else if (menu === true) {
-      showMenu(false);
-    }
+    showMenu(!menu);
   }
 
   return (
@@ -20,27 +16,35 @@ const NavBar = () => {
           <p className={"Link color-purple"}>Isabella ES</p>
         </div>
         <div className="Nav-Bar-Box-right">
-          <Link to="/" className="Link" style={{ textDecoration: "none" }}>
+          <ScrollLink
+            to="Home"
+            className="Link"
+            style={{ textDecoration: "none" }}
+          >
             Hem
-          </Link>
-          <Link to="About" className="Link" style={{ textDecoration: "none" }}>
+          </ScrollLink>
+          <ScrollLink
+            to="About"
+            className="Link"
+            style={{ textDecoration: "none" }}
+          >
             Om
-          </Link>
+          </ScrollLink>
 
-          <Link
-            to="Projects"
+          <ScrollLink
+            to="Project"
             className="Link"
             style={{ textDecoration: "none" }}
           >
             Projekt
-          </Link>
-          <Link
+          </ScrollLink>
+          <ScrollLink
             to="Contact"
             className="Link"
             style={{ textDecoration: "none" }}
           >
             Kontakt
-          </Link>
+          </ScrollLink>
           <div className="mobile-navbar">
             <IconButton aria-label="menu" onClick={handleOnClick}>
               <MenuIcon
@@ -53,37 +57,37 @@ const NavBar = () => {
       </div>
       {menu ? (
         <div className="drop-down-menu">
-          <Link
-            to="/"
+          <ScrollLink
+            to="Home"
             style={{ textDecoration: "none" }}
             onClick={() => showMenu(false)}
           >
             <p className={"Link-drop-down"}>Hem</p>
-          </Link>
+          </ScrollLink>
 
-          <Link
+          <ScrollLink
             to="About"
             style={{ textDecoration: "none" }}
             onClick={() => showMenu(false)}
           >
             <p className={"Link-drop-down"}>Om</p>
-          </Link>
+          </ScrollLink>
 
-          <Link
-            to="Projects"
+          <ScrollLink
+            to="Project"
             style={{ textDecoration: "none" }}
             onClick={() => showMenu(false)}
           >
             <p className={"Link-drop-down"}>Projekt</p>
-          </Link>
+          </ScrollLink>
 
-          <Link
+          <ScrollLink
             to="Contact"
             style={{ textDecoration: "none" }}
             onClick={() => showMenu(false)}
           >
             <p className={"Link-drop-down"}>Kontakt</p>
-          </Link>
+          </ScrollLink>
         </div>
       ) : (
         <p></p>
