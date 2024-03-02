@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import image from "../../assets/Namnlös-3.png";
+import image from "../assets/Namnlös-3.png";
 import ContactContainer from "../components/Contact/ContactContainer";
 import ProjectsContainer from "../components/Project/ProjectContainer";
 import NavBar from "../components/Navigation/NavBar";
